@@ -1,3 +1,59 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h4 {
+    font-family: Verdana;
+}
+body {
+    background: #aacbd8;
+}
+div {
+    left: 0;
+    top: 45%;
+    position: fixed;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+  padding: 12px 20px;
+  background-color: #39c5e3;
+  border: thin solid #39c5e3;
+  border-radius: 2px;
+  margin:5px;
+  font-family: Verdana;
+  display: inline-block;
+}
+
+input[id="toggle-on"]:checked + label {
+    background-color: #39d22d;
+    border: thin solid #39d22d;
+    cursor: default;
+    color: #E6E6E6;
+}
+
+input[id="toggle-off"]:checked + label {
+    background-color: #ee3624;
+    border: thin solid #ee3624;
+    cursor: default;
+    color: #E6E6E6;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #dcdcdc;
+    color: black;
+    text-align: center;
+    font-family: Verdana;
+}
