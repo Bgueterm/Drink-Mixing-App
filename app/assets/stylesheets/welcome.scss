@@ -5,10 +5,18 @@
 h4 {
     font-family: Verdana;
 }
-body {
-    background: #aacbd8;
+
+p {
+    font-family: Verdana;
 }
+
+body {
+    background: url(blur-bokeh-dark-8395.jpg);
+    background-size: 100%;
+}
+
 div {
+    color: #e6e3e7;
     left: 0;
     top: 45%;
     position: fixed;
@@ -23,13 +31,14 @@ input[type="radio"] {
 }
 
 label {
-  padding: 12px 20px;
-  background-color: #39c5e3;
-  border: thin solid #39c5e3;
-  border-radius: 2px;
-  margin:5px;
-  font-family: Verdana;
-  display: inline-block;
+    color: black;
+    padding: 12px 20px;
+    background-color: #39c5e3;
+    border: thin solid #39c5e3;
+    border-radius: 2px;
+    margin:5px;
+    font-family: Verdana;
+    display: inline-block;
 }
 
 input[id="toggle-on"]:checked + label {
@@ -48,12 +57,25 @@ input[id="toggle-off"]:checked + label {
 
 
 footer {
+    color: #aca8ad;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #dcdcdc;
-    color: black;
+    background-color: #241b26;
     text-align: center;
     font-family: Verdana;
+}
+
+div:after {
+    background: black;
+    filter: blur(10px);
+    opacity: 0.38;
+    width: 100%;
+    height: 200px;
+    top: -32px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
 }
