@@ -3,20 +3,13 @@
     <ul id="nav">
         <li><a href="drinks/index">Home</a></li>
         <li><a href="#">Saved Drinks</a></li>
-        <li><a href="#">Search</a></li>
+        <li><a href="search">Search</a></li>
 </ul>
 </div>
 
-<% form_for :drinks, url: drinks_path do |f| %>
-
-<ul>Drink Type
-    
-</ul>
-
-
-<%= check_box_tag(:pet_dog) %>
-<%= label_tag(:pet_dog, "I own a dog") %>
-<%= check_box_tag(:pet_cat) %>
-<%= label_tag(:pet_cat, "I own a cat") %>
-
+<%= form_for :drinks, url: drinks_path  do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body, size: "60x12" %>
+  <%= f.submit "Find Drinks" %>
 <% end %>
+

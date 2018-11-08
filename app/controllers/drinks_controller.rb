@@ -4,7 +4,7 @@ class DrinksController < ApplicationController
     
     def search
     end    
-    
+
     def show
     end
 
