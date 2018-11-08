@@ -2,6 +2,10 @@ class DrinksController < ApplicationController
     def index
     end
     
-    def new
+    def search
     end    
+    
+    def show
+    end
+
 end

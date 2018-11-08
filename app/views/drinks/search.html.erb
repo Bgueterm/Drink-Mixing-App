@@ -7,8 +7,11 @@
 </ul>
 </div>
 
-<% form_for :drink do |f| %>
+<% form_for :drinks, url: drinks_path do |f| %>
 
+<ul>Drink Type
+    
+</ul>
 <% f.submit %>
 
 <% end %>

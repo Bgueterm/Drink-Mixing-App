@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   
   get 'drinks/index'
   
+  get 'drinks/search'
+  
   resources :drinks
   
   root 'welcome#index'
