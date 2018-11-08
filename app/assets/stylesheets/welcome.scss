@@ -14,7 +14,7 @@ p {
     background-size: 100%;
 }
 
-.welcome {
+.welcome_div {
     color: #e6e3e7;
     left: 0;
     top: 45%;
@@ -72,7 +72,7 @@ footer {
     text-align: center;
     font-family: Verdana;
 }
-.welcome:after {
+.welcome_div:after {
     background: black;
     filter: blur(10px);
     opacity: 0.38;
