@@ -1,7 +1,6 @@
-// Place all the styles related to the Welcome controller here.
+// Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 h4 {
     font-family: Verdana;
 }
@@ -10,12 +9,15 @@ p {
     font-family: Verdana;
 }
 
-body {
+.welcome_body {
     background: url(blur-bokeh-dark-8395.jpg);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-div {
+.welcome_div {
     color: #e6e3e7;
     left: 0;
     top: 45%;
@@ -26,29 +28,36 @@ div {
     line-height: 2px;
 }
 
-input[type="radio"] {
+table {
+
+    margin: 0px auto;
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+input[type="submit"] {
     display: none;
 }
 
 label {
     color: black;
     padding: 12px 20px;
-    background-color: #39c5e3;
-    border: thin solid #39c5e3;
+    background-color: #fa735d;
+    border: thin solid #fa735d;
     border-radius: 2px;
     margin:5px;
     font-family: Verdana;
     display: inline-block;
 }
 
-input[id="toggle-on"]:checked + label {
+input[id="toggle-on"]:hover + label {
     background-color: #39d22d;
     border: thin solid #39d22d;
     cursor: default;
     color: #E6E6E6;
 }
 
-input[id="toggle-off"]:checked + label {
+input[id="toggle-off"]:hover + label {
     background-color: #ee3624;
     border: thin solid #ee3624;
     cursor: default;
@@ -66,8 +75,7 @@ footer {
     text-align: center;
     font-family: Verdana;
 }
-
-div:after {
+.welcome_div:after {
     background: black;
     filter: blur(10px);
     opacity: 0.38;
