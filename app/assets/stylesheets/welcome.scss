@@ -11,7 +11,10 @@ p {
 
 .welcome_body {
     background: url(blur-bokeh-dark-8395.jpg);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .welcome_div {
