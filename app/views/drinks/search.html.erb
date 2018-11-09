@@ -1,4 +1,4 @@
-
+<!--Navigation Pane -->
 <div id="navContainer">
     <ul id="nav">
         <li><a href="drinks/index">Home</a></li>
@@ -7,9 +7,22 @@
 </ul>
 </div>
 
-<%= form_for :drinks, url: drinks_path  do |f| %>
-  <%= f.text_field :title %>
-  <%= f.text_area :body, size: "60x12" %>
-  <%= f.submit "Find Drinks" %>
+<!-- -->
+<p class="searchPage" id="searchExp">Choose from options below and submit form for recipes</p>
+
+<% form_for @drinks  do |f| %>
+  <%= f.text_field %>
+  <%= f.select%>
+  <%= f.submit %>
 <% end %>
 
+
+
+
+<!--Back Button -->
+<%= link_to "Back", drinks_path %>
+
+<footer>
+    <h4>Please Drink Responsibly</h4>
+    <p>ITSC 3155     |      The Squad (Group 9-2)       |       University of North Carolina at Charlotte     |     2018</p>
+</footer>
