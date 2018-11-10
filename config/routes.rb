@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   get 'drinks/index'
   
   get 'drinks/search' => 'drinks#search'
+  get 'drinks/search/results' => 'drinks#results'
   
-  resources :drinks
+  resources :drinks, :liquors, :mixers, :drinkliquors, :drinkmixers
   
   root 'welcome#index'
   
