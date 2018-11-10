@@ -1,28 +1,36 @@
-<!--Navigation Pane -->
+
 <div id="navContainer">
     <ul id="nav">
         <li><a href="drinks/index">Home</a></li>
-        <li><a href="#">Saved Drinks</a></li>
         <li><a href="search">Search</a></li>
 </ul>
 </div>
 
-<!-- -->
-<p class="searchPage" id="searchExp">Choose from options below and submit form for recipes</p>
+        <!--Form code: Needs DB relations/accessor methods -->
+        
+        
+<%= form_tag do %>
+  <%= label_tag(:my_name, "My name is:") %>
+  <%= text_field_tag(:my_name) %>
+  <%= submit_tag("Process") %>
 
-<% form_for @drinks  do |f| %>
-  <%= f.text_field %>
-  <%= f.select%>
-  <%= f.submit %>
-<% end %>
-
-
-
-
-<!--Back Button -->
-<%= link_to "Back", drinks_path %>
-
-<footer>
-    <h4>Please Drink Responsibly</h4>
-    <p>ITSC 3155     |      The Squad (Group 9-2)       |       University of North Carolina at Charlotte     |     2018</p>
-</footer>
+<div class="choices">
+    <p id="selectDrinkName"> 
+  <label>Drink By Name</label>
+  
+  <%= select :drink, options_for_select(@drink_options)%>
+     </p>
+     
+      <p id="selectLiquor"> 
+  <label>Liquor</label>
+  <%= select :drink, options_for_select(@liquor_options)%>
+     </p>
+     
+        <p id="selectMixer"> 
+  <label>Liquor</label>
+  <%= select :drink, options_for_select(@mixer_options)%>
+     </p>
+ 
+ </div>
+  <%= submit "Submit" %>
+  <% end %>
