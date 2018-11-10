@@ -1,0 +1,15 @@
+
+<div id="navContainer">
+    <ul id="nav">
+        <li><a href="drinks/index">Home</a></li>
+        <li><a href="#">Saved Drinks</a></li>
+        <li><a href="search">Search</a></li>
+</ul>
+</div>
+
+<%= form_for :drinks, url: drinks_path  do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body, size: "60x12" %>
+  <%= f.submit "Find Drinks" %>
+<% end %>
+
