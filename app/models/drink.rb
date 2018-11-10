@@ -4,5 +4,5 @@ class Drink < ApplicationRecord
     has_many :DrinkMixer
     has_many :Mixer, :through => :DrinkMixer
     
-    enum flavor: { savory: 0, sour: 1, sweet: 2 }
+    enum flavor: { froozen: 0, fruity: 1, hot: 2, savory: 3, sour: 4, spicy: 5, sweet: 6 }
 end
