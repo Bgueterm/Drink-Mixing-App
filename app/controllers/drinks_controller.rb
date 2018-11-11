@@ -9,7 +9,8 @@ class DrinksController < ApplicationController
     def show
     end
     
-   def create
+    def create
+        render plain: params[:article].inspect
     end
     
     def results
