@@ -2,14 +2,35 @@
 <div id="navContainer">
     <ul id="nav">
         <li><a href="drinks/index">Home</a></li>
-        <li><a href="#">Saved Drinks</a></li>
         <li><a href="search">Search</a></li>
 </ul>
 </div>
 
-<%= form_for :drinks, url: drinks_path  do |f| %>
-  <%= f.text_field :title %>
-  <%= f.text_area :body, size: "60x12" %>
-  <%= f.submit "Find Drinks" %>
-<% end %>
+        <!--Form code: Needs DB relations/accessor methods -->
+        
+        
+<%= form_tag do %>
+  <%= label_tag(:my_name, "My name is:") %>
+  <%= text_field_tag(:my_name) %>
+  <%= submit_tag("Process") %>
 
+<div class="choices">
+    <p id="selectDrinkName"> 
+  <label>Drink By Name</label>
+  
+  <%= select :drink, options_for_select(@drink_options)%>
+     </p>
+     
+      <p id="selectLiquor"> 
+  <label>Liquor</label>
+  <%= select :drink, options_for_select(@liquor_options)%>
+     </p>
+     
+        <p id="selectMixer"> 
+  <label>Liquor</label>
+  <%= select :drink, options_for_select(@mixer_options)%>
+     </p>
+ 
+ </div>
+  <%= submit "Submit" %>
+  <% end %>
