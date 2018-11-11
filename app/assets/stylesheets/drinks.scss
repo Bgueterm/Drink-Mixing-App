@@ -1,0 +1,83 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#navContainer {
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+// css for hover over the navi bar
+li a:hover:not(.active) {
+    background-color: #999999;
+    color: white;
+}
+
+
+
+ul#nav {
+    text-align: center;
+    display: block;
+    padding: 0px;
+}
+
+#nav li {
+    color: blue;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 32px;
+}
+
+#main {
+    width: 100%;
+    text-align: center;
+}
+
+
+#descriptionMain {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 25%;
+    border: 3px solid black;
+    padding: 10px 20px;
+    display:inline-block;
+    position: center;
+    min-height: 500px;
+
+}
+
+#InformationMain {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 25%;
+    border: 3px solid black;
+    padding: 10px 20px;
+    display:inline-block;
+    min-height: 500px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+}
+
+input[type="submit"] {
+        width: auto;
+        display:block;
+        margin: 0 auto;
+        margin-top: 25px;
+}
+
