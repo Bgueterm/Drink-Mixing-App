@@ -2,8 +2,12 @@ class DrinksController < ApplicationController
     def index
     end
     
+    def new
+        @drink = Drink.new
+    end
+    
     def search
-      @drink = Drink.new
+      
     end    
 
     def show
