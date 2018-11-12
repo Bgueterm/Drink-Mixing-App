@@ -16,21 +16,20 @@
 
 <div class="choices">
     <p id="selectDrinkName"> 
-  <label>Drink By Name</label>
-  
-  <%= select :drink, options_for_select(@drink_options)%>
-     </p>
+        <label>Drink By Name</label>
+        <%= select :drink, options_for_select(@liquor_options) %>
+    </p>
      
-      <p id="selectLiquor"> 
-  <label>Liquor</label>
-  <%= select :drink, options_for_select(@liquor_options)%>
-     </p>
+    <p id="selectLiquor"> 
+        <label>Liquor</label>
+        <%= select :drink, options_for_select(@liquor_options)%>
+    </p>
      
-        <p id="selectMixer"> 
-  <label>Liquor</label>
-  <%= select :drink, options_for_select(@mixer_options)%>
-     </p>
+    <p id="selectMixer">
+        <label>Liquor</label>
+        <%= select :drink, options_for_select(@mixer_options)%>
+    </p>
  
- </div>
-  <%= submit "Submit" %>
-  <% end %>
+</div>
+<%= submit "Submit" %>
+<% end %>
