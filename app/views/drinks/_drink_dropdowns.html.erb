@@ -1,0 +1,18 @@
+<p>
+  <%= f.label Liquor.name, "Liquor" %><br>
+  <%= Liquor.all.each do |l| %>
+    <%= f.check_box l.name, { multiple: true }, l.name, false %>
+  <% end %>
+</p>
+
+<p>
+  <%= f.label Mixer.name, "Mixer" %><br>
+  <%= Mixer.all.each do |m| %>
+    <%= f.check_box m.name, { multiple: true }, m.name, false %>
+  <% end %>
+</p>
+
+<p>
+    <%= f.label :flavor %><br>
+    <%= f.select :flavor, Drink.flavors.keys %> 
+</p>
