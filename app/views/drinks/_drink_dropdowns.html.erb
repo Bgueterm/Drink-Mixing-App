@@ -1,16 +1,16 @@
-<p>
-  <%= f.label Liquor.name, "Liquor" %><br>
-  <%= Liquor.all.each do |l| %>
-    <%= f.check_box l.name, { multiple: true }, l.name, false %>
-  <% end %>
-</p>
+<%= f.fields_for(:drink_liquor) do |dl_f| %>
+  <p>
+    <%= dl_f.label Liquor.name, "Liquor" %><br>
+    <%= dl_f.collection_check_boxes :liquor_ids, Liquor.all, :id, :name %>
+  </p>
+<% end %>
 
-<p>
-  <%= f.label Mixer.name, "Mixer" %><br>
-  <%= Mixer.all.each do |m| %>
-    <%= f.check_box m.name, { multiple: true }, m.name, false %>
-  <% end %>
-</p>
+<%= f.fields_for(:drink_mixer) do |dl_f| %>
+  <p>
+    <%= dl_f.label Mixer.name, "Mixer" %><br>
+    <%= dl_f.collection_check_boxes :mixer_ids, Mixer.all, :id, :name %>
+  </p>
+<% end %>
 
 <p>
     <%= f.label :flavor %><br>

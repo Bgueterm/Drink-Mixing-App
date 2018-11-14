@@ -4,6 +4,8 @@ class DrinksController < ApplicationController
     
     def new
         @drink = Drink.new
+        @drink.DrinkLiquor.build.build_drink
+        @drink.DrinkMixer.build.build_drink
     end
     
     def search
