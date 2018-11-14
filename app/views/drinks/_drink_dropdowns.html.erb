@@ -1,16 +1,12 @@
-<%= f.fields_for(:drink_liquor) do |dl_f| %>
-  <p>
-    <%= dl_f.label Liquor.name, "Liquor" %><br>
-    <%= dl_f.collection_check_boxes :liquor_ids, Liquor.all, :id, :name %>
-  </p>
-<% end %>
+<p>
+  <%= f.label Liquor.name, "Liquor" %><br>
+  <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name %>
+</p>
 
-<%= f.fields_for(:drink_mixer) do |dl_f| %>
-  <p>
-    <%= dl_f.label Mixer.name, "Mixer" %><br>
-    <%= dl_f.collection_check_boxes :mixer_ids, Mixer.all, :id, :name %>
-  </p>
-<% end %>
+<p>
+  <%= f.label Mixer.name, "Mixer" %><br>
+  <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name %>
+</p>
 
 <p>
     <%= f.label :flavor %><br>
