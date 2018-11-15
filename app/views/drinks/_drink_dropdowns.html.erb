@@ -1,15 +1,11 @@
 <p>
   <%= f.label Liquor.name, "Liquor" %><br>
-  <%= Liquor.all.each do |l| %>
-    <%= f.check_box l.name, { multiple: true }, l.name, false %>
-  <% end %>
+  <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name %>
 </p>
 
 <p>
   <%= f.label Mixer.name, "Mixer" %><br>
-  <%= Mixer.all.each do |m| %>
-    <%= f.check_box m.name, { multiple: true }, m.name, false %>
-  <% end %>
+  <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name %>
 </p>
 
 <p>
