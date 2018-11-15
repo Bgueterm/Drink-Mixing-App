@@ -29,7 +29,6 @@ class DrinksController < ApplicationController
     private 
         def drink_params
             params.require(:drink).permit(:name, :alcoholPerVolume, :flavor,
-            { drink_liquor_ids: [], drink_mixer_ids: []})
+            {Liquor_ids: [], Mixer_ids: []})
         end
-    
 end
