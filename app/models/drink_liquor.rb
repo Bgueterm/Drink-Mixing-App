@@ -1,4 +1,7 @@
 class DrinkLiquor < ApplicationRecord
-  belongs_to :drink
-  belongs_to :liquor
+  belongs_to :Drink
+  belongs_to :Liquor
+  
+  validates :Drink, presence: true
+  validates :Liquor, presence: true
 end

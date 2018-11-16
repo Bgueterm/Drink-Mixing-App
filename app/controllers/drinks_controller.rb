@@ -9,8 +9,14 @@ class DrinksController < ApplicationController
        # @drink.DrinkMixer.build
     end
     
+    def new
+        @drink = Drink.new
+        @drink.DrinkLiquor.build
+        @drink.DrinkMixer.build
+    end
+    
     def search
-      @drink = Drink.new
+        @drink = Drink.search(params[:search])
     end    
 
     def show

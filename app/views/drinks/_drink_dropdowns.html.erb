@@ -1,0 +1,14 @@
+<p>
+  <%= f.label Liquor.name, "Liquor" %><br>
+  <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name %>
+</p>
+
+<p>
+  <%= f.label Mixer.name, "Mixer" %><br>
+  <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name %>
+</p>
+
+<p>
+    <%= f.label :flavor %><br>
+    <%= f.select :flavor, Drink.flavors.keys %> 
+</p>
