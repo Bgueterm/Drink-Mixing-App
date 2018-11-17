@@ -3,4 +3,3 @@
     (this).toggleClass("open").next(".fold").toggleClass("open");
   });
 });
-
