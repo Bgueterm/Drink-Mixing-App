@@ -4,8 +4,6 @@ class DrinksController < ApplicationController
     
     def new
         @drink = Drink.new
-        @drink.drink_liquors.build.build_liquor
-        @drink.drink_mixers.build.build_mixer
     end
     
     def search
@@ -17,8 +15,6 @@ class DrinksController < ApplicationController
     
     def create
         @drink = Drink.new(drink_params)
-        @drink.drink_liquors.build.build_liquor
-        @drink.drink_mixers.build.build_mixer
         @drink.save
         render 'new'
     end
