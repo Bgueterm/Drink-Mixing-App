@@ -4,8 +4,8 @@ class DrinksController < ApplicationController
     
     def new
         @drink = Drink.new
-        @drink.DrinkLiquor.build
-        @drink.DrinkMixer.build
+        @drink.drink_liquors.build.build_liquor
+        @drink.drink_mixers.build.build_mixer
     end
     
     def search
@@ -17,8 +17,9 @@ class DrinksController < ApplicationController
     
     def create
         @drink = Drink.new(drink_params)
-        if @drink.save
-        end
+        @drink.drink_liquors.build.build_liquor
+        @drink.drink_mixers.build.build_mixer
+        @drink.save
         render 'new'
     end
     
@@ -28,7 +29,7 @@ class DrinksController < ApplicationController
     
     private 
         def drink_params
-            params.require(:drink).permit(:name, :alcoholPerVolume, :flavor,
-            {Liquor_ids: [], Mixer_ids: []})
+            params.require(:drink).permit(:name, :alcoholPerVolume, :flavor, 
+            :description, liquor_ids: [], mixer_ids: [])
         end
 end
