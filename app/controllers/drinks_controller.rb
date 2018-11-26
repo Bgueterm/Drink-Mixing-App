@@ -5,19 +5,10 @@ class DrinksController < ApplicationController
     
     def new
         @drink = Drink.new
-      #  @drink.DrinkLiquor.build
-       # @drink.DrinkMixer.build
-    end
-    
-    def new
-        @drink = Drink.new
         @drink.DrinkLiquor.build
         @drink.DrinkMixer.build
     end
-    
-    def search
-        @drink = Drink.search(params[:search])
-    end    
+  
 
     def show
         @drink = Drink.find(params[:id])
