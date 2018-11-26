@@ -35,35 +35,6 @@
     font-size: 18px;
 }
 
-.submit_button[type="submit"] {
-    display: none;
-}
-
-.welcome_label {
-    color: black;
-    padding: 12px 20px;
-    background-color: #fa735d;
-    border: thin solid #fa735d;
-    border-radius: 2px;
-    margin:5px;
-    font-family: Verdana;
-    display: inline-block;
-}
-
-input[id="toggle-on"]:hover + label {
-    background-color: #39d22d;
-    border: thin solid #39d22d;
-    cursor: default;
-    color: #E6E6E6;
-}
-
-input[id="toggle-off"]:hover + label {
-    background-color: #ee3624;
-    border: thin solid #ee3624;
-    cursor: default;
-    color: #E6E6E6;
-}
-
 
 footer {
     color: #aca8ad;
@@ -88,28 +59,23 @@ footer {
     content: "";
 }
 
-a.button {
-  background: transparent url('bg_button_a.gif') no-repeat scroll top right;
+.button_to {
   color: #444;
   display: block;
   float: left;
   font: normal 12px arial, sans-serif;
   height: 24px;
-  margin-right: 6px;
-  padding-right: 18px; /* sliding doors padding */
   text-decoration: none;
-}
+      border: thin solid transparent;
+    text-align: center;
 
-input[id="toggle-on"]:hover + label {
+}
+.button_to :hover {
     background-color: #39d22d;
     border: thin solid #39d22d;
     cursor: default;
     color: #E6E6E6;
+    
 }
 
-btn:hover + label {
-    background-color: #ee3624;
-    border: thin solid #ee3624;
-    cursor: default;
-    color: #E6E6E6;
-}
+
