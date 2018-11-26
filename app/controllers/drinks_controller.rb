@@ -5,8 +5,6 @@ class DrinksController < ApplicationController
     
     def new
         @drink = Drink.new
-        @drink.DrinkLiquor.build
-        @drink.DrinkMixer.build
     end
   
 
@@ -52,7 +50,7 @@ class DrinksController < ApplicationController
     
     private 
         def drink_params
-            params.require(:drink).permit(:name, :alcoholPerVolume, :flavor,
-            {Liquor_ids: [], Mixer_ids: []})
+            params.require(:drink).permit(:name, :alcoholPerVolume, :flavor, 
+            :description, liquor_ids: [], mixer_ids: [])
         end
 end
