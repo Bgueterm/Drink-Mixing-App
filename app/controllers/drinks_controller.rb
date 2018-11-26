@@ -1,4 +1,5 @@
 class DrinksController < ApplicationController
+    
     def index
         @drinks = Drink.all
     end
@@ -24,6 +25,10 @@ class DrinksController < ApplicationController
     
     def results
         
+    end
+    
+    def search
+        render '_form' 
     end
     
         def edit
