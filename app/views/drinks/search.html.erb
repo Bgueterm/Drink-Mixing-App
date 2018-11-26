@@ -12,7 +12,7 @@
 <%= form_tag do %>
   <%= label_tag(:my_name, "My name is:") %>
   <%= text_field_tag(:my_name) %>
-  <%= submit_tag("Process") %>
+  <%= submit_tag "Process" %>
 
 <div class="choices">
     <p id="selectDrinkName"> 
@@ -31,5 +31,5 @@
     </p>
  
 </div>
-<%= submit "Submit" %>
+<%= submit_tag "Submit" %>
 <% end %>

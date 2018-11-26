@@ -7,7 +7,7 @@ class DrinksController < ApplicationController
     end
     
     def search
-
+        @drink = Drink.search(params[:search])
     end    
 
     def show
