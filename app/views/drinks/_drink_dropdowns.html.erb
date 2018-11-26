@@ -1,11 +1,11 @@
 <p>
   <%= f.label Liquor.name, "Liquor" %><br>
-  <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name %>
+  <%= f.collection_check_boxes :liquor_ids, Liquor.all, :id, :name %>
 </p>
 
 <p>
   <%= f.label Mixer.name, "Mixer" %><br>
-  <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name %>
+  <%= f.collection_check_boxes :mixer_ids, Mixer.all, :id, :name %>
 </p>
 
 <p>
