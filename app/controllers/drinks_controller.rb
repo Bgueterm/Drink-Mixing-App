@@ -1,7 +1,13 @@
 class DrinksController < ApplicationController
     
     def index
-        @drinks = Drink.all
+    @drinks = Drink.all
+  if params[:id]
+    @drinks = Drink.results(params[:results]).order("created_at DESC")
+  else
+    @drinks = Drink.all.order('created_at DESC')
+  end
+
     end
     
     def new
@@ -11,13 +17,14 @@ class DrinksController < ApplicationController
 
     def show
         @drink = Drink.find(params[:id])
+        redirect_to drinks__search_results_path
     end
     
      def create
         @drink = Drink.new(drink_params)
 
         if @drink.save
-            redirect_to @drink
+            redirect_to ('results')
         else
             render 'new'
         end
