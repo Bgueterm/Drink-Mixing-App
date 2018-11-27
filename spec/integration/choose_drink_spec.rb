@@ -16,5 +16,8 @@ feature "Drinks page has descriptions" do
         expect(page).to have_content("Mixer")
         expect(page).to have_content("Flavor")
     end
+    scenario "Can visit home from the drinks/search page" do
+        #UNIMPLEMENTED SCEN
+    end
 end
         
