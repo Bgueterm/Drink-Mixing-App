@@ -1,50 +1,65 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ .drink_body{
+    background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+// css for hover over the navi bar
+li a:hover:not(.active) {
+    background-color: lightblue;
+    color: black;
+}
+
+
+
+ul#nav {
+    text-align: center;
+    display: block;
+}
+
+#nav li {
+    color: blue;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 32px;
+}
 body
 {
- text-align:center;
- width:995px;
- margin:0 auto;
- padding:0px;
- font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
- background-color:#E0F2F7;
+  background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align:center;
+    width:995px;
+    margin:0 auto;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+
 }
 
 
-#drinks_by_name
-{
- width:100px;
- position:relative;
- display:inline-block;
+.upper {
+  display:inline-block;
+   width: 50%;
+    box-sizing: border-box;
+
+
 }
 
-#drinks_by_liquor
-{
- width:100px;
- position:relative;
- display:inline-block;
-}
-#drinks_by_mixer
-{
- width:100px;
- position:relative;
- display:inline-block;
-}
+.lower {
+  display:inline-block;
+     width: 50%;
 
-#drinks_by_flavor
-{
- width:100px;
- position:relative;
- display:inline-block;
 }
-
-#upper  {
- width: 200px;
- position:relative;
- display:inline-block;
-}
-
-#lower {
-  width: 200px;
- position:relative;
- display:inline-block;
-}
-

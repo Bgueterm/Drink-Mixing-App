@@ -6,31 +6,32 @@
         
 
     </ul>
-
-
-
 <%= form_for :drink, :url=> {:action => "results"} do |f| %>
 
-
+<div id="upper">
   <%= f.label Drink.name, "Drinks by Name" %><br>
-  <%= f.collection_check_boxes :Drink_ids, Drink.all, :id, :name, class:'drink_class' %>
-
-    
+  <%= f.collection_check_boxes :Drink_ids, Drink.all, :id, :name %>
+<br>
+<br>
   <%= f.label Liquor.name, "Liquor" %><br>
-  <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name, class:'liquor_class' %>
+  <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name %>
+</div>
+<br>
+<br>
 
-
-
-
+<div id="lower">
   <%= f.label Mixer.name, "Mixer" %><br>
-  <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name, class:'mixer_class' %>
+  <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name %>
 
-
+<br>
+<br>
 
     <%= f.label :flavor %><br>
-    <%= f.select :flavor, Drink.flavors.keys, class:'flavor_class' %> 
-
-
+    <%= f.select :flavor, Drink.flavors.keys %> 
+</div>
+<br>
+<br><br>
+<br>
 <%= submit_tag "Search" %>
  <% end %>
 

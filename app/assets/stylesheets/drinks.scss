@@ -11,8 +11,6 @@
     
 }
 
-
-
 // css for hover over the navi bar
 li a:hover:not(.active) {
     background-color: lightblue;
@@ -24,7 +22,6 @@ li a:hover:not(.active) {
 ul#nav {
     text-align: center;
     display: block;
-    padding: 0px;
 }
 
 #nav li {
@@ -50,7 +47,6 @@ ul#nav {
     width: 25%;
     height: 90%;
     border: 3px solid black;
-    padding: 10px 20px;
     display:inline-block;
     position: center;
     min-height: 500px;
@@ -64,7 +60,6 @@ ul#nav {
     width: 25%;
     height: 90%;
     border: 3px solid black;
-    padding: 10px 20px;
     display:inline-block;
     position: center;
     min-height: 500px;
@@ -78,6 +73,9 @@ footer {
     background-color: lightgray;
     color: black;
     text-align: center;
+}
+.upper {
+    width:50%;
 }
 
 
