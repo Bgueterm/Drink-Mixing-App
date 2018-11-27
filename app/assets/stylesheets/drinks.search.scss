@@ -1,74 +1,69 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ .drink_body{
+    background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+// css for hover over the navi bar
+li a:hover:not(.active) {
+    background-color: lightblue;
+    color: black;
+}
+
+
+
+ul#nav {
+    text-align: center;
+    display: block;
+}
+
+#nav li {
+    color: blue;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 32px;
+}
 body
 {
- text-align:center;
- width:995px;
- margin:0 auto;
- padding:0px;
- font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
- background-color:#E0F2F7;
-}
-#wrapper
-{
- margin:0 auto;
- padding:0px;
- text-align:center;
- width:995px;
-}
-#wrapper h1
-{
- margin-top:150px;
- font-size:55px;
- color:#0489B1;
-}
-#wrapper h1 a
-{
- color:#0489B1;
- font-size:18px;
-}
-#image_div .img_wrapper
-{
- width:180px;
- position:relative;
- display:inline-block;
-}
-#image_div .img_wrapper img
-{
- width:100%;
-}
-#image_div .img_wrapper:hover img
-{
- -webkit-filter: blur(1.7px);
-}
-#image_div .img_wrapper span
-{
- display:none;
- position:absolute;
- top:40px;
- left:30px;
-}
-#image_div .img_wrapper:hover span
-{
- display:table-cell;
-}
-#image_div .img_wrapper span input[type="button"]
-{
- width:120px;
- height:40px;
- background-color:#00BFFF;
- border:none;
- color:white;
- font-weight:bold;
- font-size:17px;
+  background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align:center;
+    width:995px;
+    margin:0 auto;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+
 }
 
-#image_div .img_wrapper:hover span:nth-of-type(1){
-    top: 20px;
+
+.upper {
+  display:inline-block;
+   width: 50%;
+    box-sizing: border-box;
+
+
 }
 
-#image_div .img_wrapper:hover span:nth-of-type(2){
-    top: 70px;
+.lower {
+  display:inline-block;
+     width: 50%;
+
 }
 
-#image_div .img_wrapper:hover span:nth-of-type(3){
-    top: 120px;
+submit_tag {
+    
 }

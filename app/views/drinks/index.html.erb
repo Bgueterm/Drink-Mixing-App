@@ -1,27 +1,40 @@
-
-
-<div id="navContainer">
+<body class="drink_body">
+    <div class="drink_div">
+    <div id="navContainer">
     <ul id="nav">
         
-        <li><a href="#">Home</a></li>
-        <li><a href="search">Search</a></li>
-    </ul>
+        <li> <%= link_to "Home", drinks_path, class: "button_to", :method => "get" %> </li>
 
-<div id="main">
+        <li> <%= link_to "Search", drinks_search_path, class: "button_to", :method => "get" %> </li>
+    </ul>
+</div>
+<div id="content">
 
     <section id="descriptionMain">
     <h2>Description Area</h2>
-    <p>Welcome to the Drink Mixing App! This is an application created by The Squad (Group 9-2) of ITSC 3155, as mentioned in our footer.  You can use this app to quickly find drinks based on their mixers & liqours, or by a flavor profile, whatever works for you!
+        <p>Welcome to the Drink Mixing App! 
+        This is an application created by The Squad (Group 9-2) of ITSC 3155, 
+        as mentioned in our footer.  You can use this app to quickly find drinks 
+        based on their mixers & liquors, or by a flavor profile, whatever works 
+        for you!
+
     </p>
     </section>
     <section id="InformationMain">
     <h2>Information Area</h2>
-    <p>To get started, simply click the "Continue" button, or click the "Search" button up top!  When in the search section, simply select the search  terms by clicking the associated checkboxes and hit "submit" to begin the search! It's that easy!
+       <p>To get started, simply click the "Search"  button up top! 
+       When in the search section, simply select the search  terms 
+       by clicking the associated checkboxes and hit "submit" to begin the search! 
+       It's that easy!
+
     </p>
-    </section>
     
+    </section>
 
 </div>
+    </div>
+</body>
+
 
 <footer>
     <h4>Please Drink Responsibly</h4>
