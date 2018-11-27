@@ -1,6 +1,6 @@
-
-
-<div id="navContainer">
+<body class="drink_body">
+    <div class="drink_div">
+    <div id="navContainer">
     <ul id="nav">
         
         <li> <%= link_to "Home", drinks_path, class: "button_to", :method => "get" %> </li>
@@ -20,10 +20,18 @@
     <h2>Information Area</h2>
     <p>Information is here.
     </p>
-    </section>
     
+    </section>
 
 </div>
+
+
+     <%= button_to "Start Search", drinks_search_path, class: "button_to", :method => "get" %>
+
+        
+    </div>
+</body>
+
 
 <footer>
     <h4>Please Drink Responsibly</h4>
