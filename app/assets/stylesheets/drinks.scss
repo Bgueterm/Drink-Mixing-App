@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+ .drink_body{
+    background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 .bodybackground {
     background: darkgray;
 }
@@ -19,6 +25,8 @@
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
+    background-color: lightblue;
+    color: black;
     background-color: #999999;
     color: white;
     
@@ -31,6 +39,7 @@ ul#nav {
     display: block;
     padding: 0px;
     
+
 }
 
 #nav li {
@@ -46,7 +55,7 @@ ul#nav {
     font-size: 32px;
 }
 
-#main {
+#content {
     width: 100%;
     text-align: center;
     
@@ -56,9 +65,13 @@ ul#nav {
     padding: 20px;
 }
 
+}
+
 #descriptionMain {
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     width: 25%;
+    height: 90%;
     border: 3px solid black;
     display:inline-block;
     min-height: 500px;
@@ -67,10 +80,14 @@ ul#nav {
 }
 
 #InformationMain {
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     width: 25%;
+    height: 90%;
     border: 3px solid black;
     display: inline-block;
+    display:inline-block;
+    position: center;
     min-height: 500px;
 }
 
@@ -86,12 +103,5 @@ footer {
     background-color: lightgray;
     color: black;
     text-align: center;
-}
-
-input[type="submit"] {
-        width: auto;
-        display:block;
-        margin: 0 auto;
-        margin-top: 25px;
 }
 

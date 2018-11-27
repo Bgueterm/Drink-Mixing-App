@@ -4,8 +4,12 @@
 <div id="navContainer">
     <ul id="nav">
         
-        <li><a href="#">Home</a></li>
-        <li><a href="search">Search</a></li>
+        <li> <%= link_to "Home", drinks_path, class: "button_to", :method => "get" %> </li>
+
+        <li> <%= link_to "Search", drinks_search_path, class: "button_to", :method => "get" %> </li>
+        
+        <li> <%= link_to "Results", drinks_search_results_path, class: "button_to", :method => "get" %> </li>
+
     </ul>
 
 <p>RESULTS page</p>

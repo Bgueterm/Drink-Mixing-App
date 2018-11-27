@@ -6,14 +6,11 @@
         <table class="welcome_table">
             <tr>
                 <th>
-                    <form method="get" action='drinks/index' class="button_to">
-                        <input id="toggle-off" name="toggle" type="submit" class= "submit_button"><label for="toggle-off" class= "welcome_label">Not Quite</label>
-                    </form>
+                    <%= button_to "Nope, I'll be back", welcome_index_path, class: "button_to", :method => "get" %>
                 </th>
                 <th>
-                    <form method="get" action='drinks/index' class="button_to">
-                        <input id="toggle-on" name="toggle" type="submit" class= "submit_button"><label for="toggle-on" class="welcome_label">Heck Yeah!</label>
-                    </form>
+                    <%= button_to "Yes I am!", drinks_path, class: "button_to", :method => "get" %>
+
                 </th>
             </tr>
         </table>

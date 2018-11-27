@@ -1,27 +1,57 @@
 class DrinksController < ApplicationController
+    
     def index
+        @drinks = Drink.all
     end
     
     def new
         @drink = Drink.new
     end
-    
-    def search
-        @drink = Drink.search(params[:search])
-    end    
+  
 
     def show
+        @drink = Drink.find(params[:id])
     end
     
-    def create
+     def create
         @drink = Drink.new(drink_params)
-        @drink.save
-        render 'new'
+
+        if @drink.save
+            redirect_to @drink
+        else
+            render 'new'
+        end
     end
     
     def results
         
     end
+    
+    def search
+        render '_form' 
+    end
+    
+        def edit
+        @drink = Drink.find(params[:id])
+    end
+    
+    def update
+        @drink = Drink.find(params[:id])
+        
+        if @drink.update(drink_params)
+            redirect_to @drink
+        else
+            render 'edit'
+        end
+    end    
+    
+    def destroy
+        @drink = Drink.find(params[:id])
+        @drink.destroy
+        
+        redirect_to drinks_path
+    end
+
     
     private 
         def drink_params
