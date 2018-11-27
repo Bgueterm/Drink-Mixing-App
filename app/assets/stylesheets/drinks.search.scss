@@ -1,13 +1,18 @@
-body
+
+ body
 {
  text-align:center;
  width:995px;
  margin:0 auto;
  padding:0px;
  font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
- background-color:#E0F2F7;
+  background-image: url("blur-bokeh-dark-8395.jpg");
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
-#wrapper
+ #wrapper
 {
  margin:0 auto;
  padding:0px;
