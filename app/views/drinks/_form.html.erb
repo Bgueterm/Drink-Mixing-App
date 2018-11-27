@@ -5,37 +5,60 @@
 
         <li> <%= link_to "Search", drinks_search_path, class: "button_to", :method => "get" %> </li>
         
-        <li> <%= link_to "Results", drinks_search_results_path, class: "button_to", :method => "get" %> </li>
 
     </ul>
+</div>
 
-<div id="main">
+<body class="search_body">
+    <div class="search_div">
+        
+ 
+
+<%= form_for :drink, :url=> {:action => "results"} do |f| %>
 
 
-<%= form_for :drink do |f| %>
-
-<p>
+ <div class = "upper">
+<p id="drinks_by_name">
+  <%= f.label Drink.name, "Drinks by Name" %><br>
+  <%= f.collection_check_boxes :Drink_ids, Drink.all, :id, :name %>
+</p>    
+    
+<p id="drinks_by_liquor">
   <%= f.label Liquor.name, "Liquor" %><br>
   <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name %>
 </p>
 
-<p>
+</div> 
+
+<div id="lower"> 
+<p id="drinks_by_mixer">
   <%= f.label Mixer.name, "Mixer" %><br>
   <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name %>
 </p>
+</div>
 
-<p>
+<p id="drinks_by_flavor">
     <%= f.label :flavor %><br>
     <%= f.select :flavor, Drink.flavors.keys %> 
 </p>
 
-   <% end %>
-   
-    
+<%= submit_tag "Search" %>
+
 
 </div>
+   <% end %>
+   
+   
+
+    
+</body>
+
+
+
+
+
 
 <footer>
-    <h4>Please Drink Responsibly</h4>
+    <h4><strong>Please Drink Responsibly</strong></h4>
     <p>ITSC 3155     |      The Squad (Group 9-2)       |       University of North Carolina at Charlotte     |     2018</p>
 </footer>

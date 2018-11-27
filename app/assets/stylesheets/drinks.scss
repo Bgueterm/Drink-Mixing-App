@@ -3,11 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
  .drink_body{
-    background: url(drinkBG.jpg);
+    background: url(drinkBG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    
 }
 
 #navContainer {
@@ -21,8 +22,8 @@
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
-    background-color: #999999;
-    color: white;
+    background-color: lightblue;
+    color: black;
 }
 
 
@@ -52,10 +53,11 @@ ul#nav {
 
 
 #descriptionMain {
-    background-color: lightgray;
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 25%;
+    height: 90%;
     border: 3px solid black;
     padding: 10px 20px;
     display:inline-block;
@@ -65,11 +67,12 @@ ul#nav {
 }
 
 #InformationMain {
-        background-color: lightgray;
-
+    background-color: lightblue;
+    border: solid 1px #000;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 25%;
+    height: 90%;
     border: 3px solid black;
     padding: 10px 20px;
     display:inline-block;
@@ -84,12 +87,5 @@ footer {
     background-color: lightgray;
     color: black;
     text-align: center;
-}
-
-input[type="submit"] {
-        width: auto;
-        display:block;
-        margin: 0 auto;
-        margin-top: 25px;
 }
 

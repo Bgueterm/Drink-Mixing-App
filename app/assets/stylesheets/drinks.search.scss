@@ -1,79 +1,51 @@
-
- body
+body
 {
  text-align:center;
  width:995px;
  margin:0 auto;
  padding:0px;
  font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
-  background-image: url("blur-bokeh-dark-8395.jpg");
-      background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+ background-color:#E0F2F7;
 }
- #wrapper
+.search_div
 {
  margin:0 auto;
  padding:0px;
  text-align:center;
- width:995px;
+ width:400px;
 }
-#wrapper h1
+
+#drinks_by_name
 {
- margin-top:150px;
- font-size:55px;
- color:#0489B1;
-}
-#wrapper h1 a
-{
- color:#0489B1;
- font-size:18px;
-}
-#image_div .img_wrapper
-{
- width:180px;
+ width:100px;
  position:relative;
  display:inline-block;
 }
-#image_div .img_wrapper img
+
+#drinks_by_liquor
 {
- width:100%;
+ width:100px;
+ position:relative;
+ display:inline-block;
 }
-#image_div .img_wrapper:hover img
+#drinks_by_mixer
 {
- -webkit-filter: blur(1.7px);
-}
-#image_div .img_wrapper span
-{
- display:none;
- position:absolute;
- top:40px;
- left:30px;
-}
-#image_div .img_wrapper:hover span
-{
- display:table-cell;
-}
-#image_div .img_wrapper span input[type="button"]
-{
- width:120px;
- height:40px;
- background-color:#00BFFF;
- border:none;
- color:white;
- font-weight:bold;
- font-size:17px;
+ width:100px;
+ position:relative;
+ display:inline-block;
 }
 
-#image_div .img_wrapper:hover span:nth-of-type(1){
-    top: 20px;
+#drinks_by_flavor
+{
+ width:100px;
+ position:relative;
+ display:inline-block;
 }
 
-#image_div .img_wrapper:hover span:nth-of-type(2){
-    top: 70px;
+#upper #lower {
+ width: 200px;
+ position:relative;
+ display:inline-block;
 }
 
-#image_div .img_wrapper:hover span:nth-of-type(3){
-    top: 120px;
-}
+
