@@ -6,7 +6,7 @@
         
 
     </ul>
-<%= form_for(:drink, url: drinks_search_results_path, method: :get ) do |f| %>
+<%= form_for(:results, method: :get ) do |f| %>
 `<div id="upper">
   <%= f.label Drink.name, "Drinks by Name" %><br>
   <%= f.collection_check_boxes :Drink_ids, Drink.all, :id, :name %>
