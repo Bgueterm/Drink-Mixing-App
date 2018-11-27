@@ -43,38 +43,46 @@ ul#nav {
     font-size: 32px;
 }
 
-#content {
-    width: 100%;
-    text-align: center;
+#clearfix {
+    left: 25%;
+    top: 15%;
+    position: fixed;
+    width: 50%;
+}
+
+
+* {
+    box-sizing: border-box;
     
 }
 
-#PaddingRegionAbove {
+.box {
+
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 48%;
+    max-width: 700px;
+    margin: 7px;
     padding: 20px;
+    border-top: 10px solid #241b26;
+    float: left;
+    min-height: 400px;
+    max-height: 400px;
+    > p.p {
+        font-size: 20px;
+    }
 }
 
-
-#descriptionMain {
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 25%;
-    border: 3px solid black;
-    display:inline-block;
-    min-height: 500px;
-    text-align: center;
+.box a {
+        filter: blur(5px);
 
 }
 
-#InformationMain {
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 25%;
-    border: 3px solid black;
-    display:inline-block;
-    position: center;
-    min-height: 500px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-
 
 
 footer {
