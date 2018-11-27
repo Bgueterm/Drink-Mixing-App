@@ -16,6 +16,16 @@ body { padding: .2em 2em; }
   th, td { padding: .4em; }
 }
 
+.TheBackground {
+      background-color: darkgray;
+}
+
+.BackgroundThing {
+      background-color: darkgray;
+      padding: 100% 50%;
+  
+}
+
 // fold table 
 table.fold-table {
   > tbody {
@@ -37,7 +47,8 @@ table.fold-table {
           transition: all .3s ease;
         }
       }
-      &:nth-child(4n-1) { background: #eee; }
+      &:nth-child(4n-1) { background: #eee;
+      }
       &:hover { background: #ccc; }
       &.open {
         background: tomato;
