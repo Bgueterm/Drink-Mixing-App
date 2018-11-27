@@ -2,16 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
- .drink_body{
-    background: url(drinkBG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-.bodybackground {
-    background: darkgray;
-}
-
 
 #navContainer {
     width: 100%;
@@ -38,8 +28,6 @@ ul#nav {
     text-align: center;
     display: block;
     padding: 0px;
-    
-
 }
 
 #nav li {
@@ -65,13 +53,11 @@ ul#nav {
     padding: 20px;
 }
 
-}
 
 #descriptionMain {
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     width: 25%;
-    height: 90%;
     border: 3px solid black;
     display:inline-block;
     min-height: 500px;
@@ -83,17 +69,13 @@ ul#nav {
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     width: 25%;
-    height: 90%;
     border: 3px solid black;
-    display: inline-block;
     display:inline-block;
     position: center;
     min-height: 500px;
 }
 
-#PaddingRegionBelow {
-    padding: 100%;
-}
+
 
 footer {
     position: fixed;
