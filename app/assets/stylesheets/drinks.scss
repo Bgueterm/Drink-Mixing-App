@@ -11,14 +11,7 @@
     
 }
 
-#navContainer {
-    width: 100%;
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
@@ -46,11 +39,9 @@ ul#nav {
     font-size: 32px;
 }
 
-#main {
+#content {
     width: 100%;
-    text-align: center;
 }
-
 
 #descriptionMain {
     background-color: lightblue;
@@ -68,7 +59,6 @@ ul#nav {
 
 #InformationMain {
     background-color: lightblue;
-    border: solid 1px #000;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 25%;
@@ -76,6 +66,7 @@ ul#nav {
     border: 3px solid black;
     padding: 10px 20px;
     display:inline-block;
+    position: center;
     min-height: 500px;
 }
 
@@ -88,4 +79,5 @@ footer {
     color: black;
     text-align: center;
 }
+
 
