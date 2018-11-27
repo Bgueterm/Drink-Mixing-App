@@ -2,14 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
- .drink_body{
-    background: url(drinkBG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    
-}
+
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
@@ -64,6 +57,43 @@ body
 
 }
 
-submit_tag {
-    
+* {
+    box-sizing: border-box;
+}
+
+.box2 {
+
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 437px;
+    margin: 10px;
+    padding: 30px;
+    position: static;
+    border-top: 10px solid #241b26;
+    float: left;
+    min-height: 200px;
+    max-height: 200px;
+
+}
+
+.box3 {
+
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 437px;
+    margin: 10px;
+    padding: 30px;
+    position: static;
+    border-top: 10px solid #241b26;
+    float: left;
+    min-height: 200px;
+    max-height: 200px;
+
+}
+
+.Submit {
+    top: 50px;
+    left: -10px;
+    display: inline-block;
+    position: relative;
 }

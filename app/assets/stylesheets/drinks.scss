@@ -2,12 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
- .drink_body{
-    background: url(drinkBG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+
+#navContainer {
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     
 }
 
@@ -15,6 +17,9 @@
 li a:hover:not(.active) {
     background-color: lightblue;
     color: black;
+    background-color: #999999;
+    color: white;
+    
 }
 
 
@@ -22,6 +27,7 @@ li a:hover:not(.active) {
 ul#nav {
     text-align: center;
     display: block;
+    padding: 0px;
 }
 
 #nav li {
@@ -29,6 +35,7 @@ ul#nav {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
+    
 }
 
 #nav li a {
@@ -36,34 +43,41 @@ ul#nav {
     font-size: 32px;
 }
 
-#content {
-    width: 100%;
+#clearfix {
+margin-top: 12%;
 }
 
-#descriptionMain {
+
+* {
+    box-sizing: border-box;
+    
+}
+
+.box {
+
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 25%;
-    height: 90%;
-    border: 3px solid black;
-    display:inline-block;
-    position: center;
-    min-height: 500px;
-
+    width: 48%;
+    max-width: 700px;
+    margin: 7px;
+    padding: 20px;
+    position: static;
+    border-top: 10px solid #241b26;
+    float: left;
+    min-height: 400px;
+    max-height: 400px;
+    > p.p {
+        font-size: 20px;
+    }
 }
 
-#InformationMain {
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 25%;
-    height: 90%;
-    border: 3px solid black;
-    display:inline-block;
-    position: center;
-    min-height: 500px;
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
+
 
 footer {
     position: fixed;
