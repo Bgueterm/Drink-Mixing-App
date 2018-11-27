@@ -9,4 +9,8 @@ class Drink < ApplicationRecord
     
     validates :name, presence: true, length: { minimum: 3 }
     validates :alcoholPerVolume, presence: true, numericality: { greater_than_or_equal_to: 0.00, less_than_or_equal_to: 100.00}
+    
+    def to_s
+    "Name:#{self.name} :#{self.liquor.name} :#{self.mixer.name}"
+  end
 end
