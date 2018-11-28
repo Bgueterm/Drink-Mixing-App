@@ -10,27 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_15_161138) do
-
-  create_table "drink_liquors", force: :cascade do |t|
-    t.integer "drink_id"
-    t.integer "liquor_id"
-    t.string "unit"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["drink_id"], name: "index_drink_liquors_on_drink_id"
-    t.index ["liquor_id"], name: "index_drink_liquors_on_liquor_id"
-  end
-
-  create_table "drink_mixers", force: :cascade do |t|
-    t.integer "drink_id"
-    t.integer "mixer_id"
-    t.string "unit"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["drink_id"], name: "index_drink_mixers_on_drink_id"
-    t.index ["mixer_id"], name: "index_drink_mixers_on_mixer_id"
-  end
+ActiveRecord::Schema.define(version: 2018_11_18_002521) do
 
   create_table "drinks", force: :cascade do |t|
     t.string "name"
@@ -38,19 +18,22 @@ ActiveRecord::Schema.define(version: 2018_11_15_161138) do
     t.integer "flavor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "description"
   end
 
   create_table "liquors", force: :cascade do |t|
     t.string "name"
+    t.integer "drink_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["drink_id"], name: "index_liquors_on_drink_id"
   end
 
   create_table "mixers", force: :cascade do |t|
     t.string "name"
+    t.integer "drink_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["drink_id"], name: "index_mixers_on_drink_id"
   end
 
 end

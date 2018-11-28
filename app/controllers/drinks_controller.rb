@@ -1,73 +1,51 @@
 class DrinksController < ApplicationController
-    
     def index
         @drinks = Drink.all
-            if params[:id]
-                 @drinks = Drink.results(params[:id]).order("created_at DESC")
-            else
-             @drinks = Drink.all.order('created_at DESC')
     end
-
+#--------------------------------------------------------------#
+    def show
+        @drink = Drink.find(params[:id])
     end
-    
+#--------------------------------------------------------------#
     def new
         @drink = Drink.new
     end
-  
-
-    def show
-        @drink = Drink.find(params[:id])
-        redirect_to drinks_search_results_path
-    end
-    
-     def create
+#--------------------------------------------------------------#    
+    def create
+        
         @drink = Drink.new(drink_params)
-
+        
         if @drink.save
-            redirect_to ('results')
-        else
-            render 'new'
+             redirect_to @drink
+            else
+             render 'new'
         end
-     end
-    
-    def results
-    @drinks = Drink.all
-        if params[:id]
-        @drinks = Drink.results(params[:results]).order("created_at DESC")
-        else
-      @drinks = Drink.all.order('created_at DESC')
-    end  
     end
-    
-    def search
-        render '_form' 
-    end
-    
-        def edit
+#--------------------------------------------------------------#    
+    def edit
         @drink = Drink.find(params[:id])
     end
-    
+#--------------------------------------------------------------#    
     def update
         @drink = Drink.find(params[:id])
-        
-        if @drink.update(drink_params)
-            redirect_to @drink
-        else
-            render 'edit'
-        end
-    end    
-    
-    def destroy
-        @drink = Drink.find(params[:id])
-        @drink.destroy
-        
-        redirect_to drinks_path
+            if @drink.update(drink_params)
+        redirect_to @drink
+            else
+         render 'edit'
+            end
     end
-
-    
-    private 
-        def drink_params
-            params.require(:drink).permit(:name, :alcoholPerVolume, :flavor, 
-            :description, liquor_ids: [], mixer_ids: [])
-        end
+#--------------------------------------------------------------#    
+    def destroy
+         @drink = Drink.find(params[:id])
+         @drink.destroy
+         redirect_to drinks_path
+    end
+#--------------------------------------------------------------#    
 end
+#--------------------------------------------------------------#
+
+private
+    def drink_params 
+            params.require(:drink).permit(:name,:alcoholPerVolume,:flavor)
+    end
+#--------------------------------------------------------------#

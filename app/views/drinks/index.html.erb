@@ -1,45 +1,24 @@
-<body class="drink_body">
-    <div class="drink_div">
-    <div id="navContainer">
-    <ul id="nav">
-        
-        <li> <%= link_to "Home", drinks_path, class: "button_to", :method => "get" %> </li>
+<h1>Drink Results</h1>
+<%= link_to 'New drink', new_drink_path %>
 
-        <li> <%= link_to "Search", drinks_search_path, class: "button_to", :method => "get" %> </li>
-    </ul>
-</div>
-<div id="clearfix">
-
-    <section id="PaddingRegionAbove"></section>
-    <section class="box">
-    <h2>Description Area</h2>
-        <p class="p">Welcome to the Drink Mixing App! This is an application created by The Squad (Group 9-2) of ITSC 3155, 
-        as mentioned in our footer.  You can use this app to quickly find drinks 
-        based on their mixers & liquors, or by a flavor profile, whatever works 
-        for you!
-
-    </p>
-    </section>
-    <section class="box">
-    <h2>Information Area</h2>
-       <p class="p">To get started, simply click the "Search"  button up top! 
-       When in the search section, simply select the search  terms 
-       by clicking the associated checkboxes and hit "submit" to begin the search! 
-       It's that easy!
-       </p>
-    </section>
-    <section id="PaddingRegionBelow">
-        
-    </section>
-    
-    </section>
-
-</div>
-    </div>
-</body>
-
-
-<footer>
-    <h4>Please Drink Responsibly</h4>
-    <p>ITSC 3155     |      The Squad (Group 9-2)       |       University of North Carolina at Charlotte     |     2018</p>
-</footer>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Alcohol Per Volume</th>
+    <th>Flavor</th>
+  </tr>
+ 
+  <% @drinks.each do |drink| %>
+    <tr>
+      <td><%= drink.name %></td>
+      <td><%= drink.alcoholPerVolume %></td>
+      <td><%= drink.flavor %></td>
+      <td><%= link_to 'Show', drink_path(drink) %></td>
+      <td><%= link_to 'Edit', edit_drink_path(drink) %></td>
+      <td><%= link_to 'Destroy',
+                  drink_path(drink),
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' }%></td>
+    </tr>
+  <% end %>
+</table>

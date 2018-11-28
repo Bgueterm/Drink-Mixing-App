@@ -1,0 +1,50 @@
+<p>
+    <strong>Name:</strong>
+    <%= @drink.name %>
+</p>
+
+<p>
+    <strong>Alcohol Per Volume:</strong>
+    <%= @drink.alcoholPerVolume %>
+</p>
+
+
+
+
+<p>
+    <strong>Flavor:</strong>
+    <%= @drink.flavor %>
+</p>
+
+
+<h2>Mixers</h2>
+<%= render @drink.mixers %>
+<% @drink.mixers.each do |mixer| %>
+  <p>
+    <strong>Name:</strong>
+    <%= mixer.name %>
+  </p>
+ 
+<% end %>
+
+
+
+<h2>Liquors</h2>
+<%= render @drink.liquors %>
+<% @drink.liquors.each do |liquor| %>
+  <p>
+    <strong>Name:</strong>
+    <%= liquor.name %>
+  </p>
+ 
+<% end %>
+
+<h2>Add a Liquor:</h2>
+<%= render 'liquors/form' %>
+
+<h2>Add a Mixer:</h2>
+<%= render 'mixers/form' %>
+
+
+
+<%= link_to 'Drink List', drinks_path %>

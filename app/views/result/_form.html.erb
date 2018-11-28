@@ -1,7 +1,0 @@
-<%= form_for(:result, url: drinks_search_results_path, method: :get ) do |f| %>
-<p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-</p>
-    <%= f.text Drink.flavors.keys %>
-<% end %>
