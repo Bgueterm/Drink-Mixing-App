@@ -1,12 +1,12 @@
 class DrinksController < ApplicationController
     
     def index
-    @drinks = Drink.all
-  if params[:id]
-    @drinks = Drink.results(params[:results]).order("created_at DESC")
-  else
-    @drinks = Drink.all.order('created_at DESC')
-  end
+        @drinks = Drink.all
+            if params[:id]
+                 @drinks = Drink.results(params[:id]).order("created_at DESC")
+            else
+             @drinks = Drink.all.order('created_at DESC')
+    end
 
     end
     
@@ -17,7 +17,7 @@ class DrinksController < ApplicationController
 
     def show
         @drink = Drink.find(params[:id])
-        redirect_to drinks__search_results_path
+        redirect_to drinks_search_results_path
     end
     
      def create
@@ -28,15 +28,15 @@ class DrinksController < ApplicationController
         else
             render 'new'
         end
-    end
+     end
     
     def results
     @drinks = Drink.all
-  if params[:id]
-    @drinks = Drink.results(params[:results]).order("created_at DESC")
-  else
-    @drinks = Drink.all.order('created_at DESC')
-  end  
+        if params[:id]
+        @drinks = Drink.results(params[:results]).order("created_at DESC")
+        else
+      @drinks = Drink.all.order('created_at DESC')
+    end  
     end
     
     def search
