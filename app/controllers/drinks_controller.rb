@@ -40,7 +40,6 @@ class DrinksController < ApplicationController
     end
     
     def search
-        render '_form' 
     end
     
         def edit
