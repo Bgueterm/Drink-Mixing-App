@@ -1,4 +1,12 @@
+<div id="navContainer">
+    <ul id="nav">
+        <li> <%= link_to "Home", drinks_path, class: "button_to", :method => "get" %> </li>
+        <li> <%= link_to 'New drink', new_drink_path %> </li>
+    </ul>
+</div>
+
 <h1>Drink Results</h1>
+
 <%= link_to 'New drink', new_drink_path %>
 
 <table>

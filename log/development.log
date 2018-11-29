@@ -4004,3 +4004,1213 @@ Processing by DrinksController#index as HTML
 Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 152.15.113.5 at 2018-11-29 15:18:51 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 253ms (Views: 245.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.113.5 at 2018-11-29 15:18:53 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks/index?toggle=Submit" for 152.15.113.5 at 2018-11-29 15:18:57 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"toggle"=>"Submit"}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:11
+  Rendered drinks/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 55ms (Views: 41.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:19:00 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (24.1ms)
+  Rendered drinks/new.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:19:02 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:11
+  Rendered drinks/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/index?toggle=Submit" for 152.15.113.5 at 2018-11-29 15:19:20 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"toggle"=>"Submit"}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:11
+  Rendered drinks/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:19:33 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/drinks" for 152.15.113.5 at 2018-11-29 15:19:41 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/i+vSPcPCP4ykzicEA2IRD0/K7EHOFE3VtavtR2QTm+/5xS/cdr9Qh3Rk7QVMgCj4TqRRBuXeqy1JTnJ/4KXfQ==", "drink"=>{"name"=>"asd", "alcoholPerVolume"=>"asdasd", "flavor"=>"ASDASD"}, "commit"=>"Create Drink"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.1ms)
+  Rendered drinks/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/drinks" for 152.15.113.5 at 2018-11-29 15:19:48 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h9UZd7k4axxlvkzCixFdWg/+mbTCG6LEmoY3brjdaRyPFEIWx5Z6KIt8upUR5Opik/Tk9OWfA34dHhU2qcD20A==", "drink"=>{"name"=>"asd", "alcoholPerVolume"=>"123", "flavor"=>"ASDASD"}, "commit"=>"Create Drink"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.2ms)
+  Rendered drinks/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 42ms (Views: 32.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/drinks" for 152.15.113.5 at 2018-11-29 15:19:56 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r3w51++xZAQbpLOfgrUfpGvPcKR5iIEy1Dkao3nhgFinvWK2kR91MPVmRcgYQKic98UN5F4MIIhToTj7aPwflA==", "drink"=>{"name"=>"asd", "alcoholPerVolume"=>"99", "flavor"=>"ASDASD"}, "commit"=>"Create Drink"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+  [1m[36mDrink Create (0.7ms)[0m  [1m[32mINSERT INTO "drinks" ("name", "alcoholPerVolume", "flavor", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "asd"], ["alcoholPerVolume", 99.0], ["flavor", 0], ["created_at", "2018-11-29 15:19:56.530037"], ["updated_at", "2018-11-29 15:19:56.530037"]]
+  ↳ app/controllers/drinks_controller.rb:18
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+Redirected to https://1f40a1d277d049cea368c2503b5b0459.vfs.cloud9.us-east-2.amazonaws.com/drinks/5
+Completed 302 Found in 11ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/drinks/5" for 152.15.113.5 at 2018-11-29 15:19:56 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 5]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 5]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered liquors/_form.html.erb (11.7ms)
+  Rendered mixers/_form.html.erb (6.8ms)
+  Rendered drinks/show.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 91ms (Views: 84.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 152.15.113.5 at 2018-11-29 15:23:46 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:24:00 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:11
+  Rendered drinks/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:28:02 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/rack-2.0.6/lib/rack/tempfile_reaper.rb:15
+  Rendered drinks/index.html.erb within layouts/application (247.2ms)
+Completed 500 Internal Server Error in 261ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `drinks_search_path' for #<#<Class:0x00000004b2b520>:0x00000004b1eeb0>
+Did you mean?  drinks_create_path
+               drinks_result_path):
+    4:     <ul id="nav">
+    5:         <li> <%= link_to "Home", drinks_path, class: "button_to", :method => "get" %> </li>
+    6: 
+    7:         <li> <%= link_to "Search", drinks_search_path, class: "button_to", :method => "get" %> </li>
+    8:     </ul>
+    9: </div>
+   10: 
+  
+app/views/drinks/index.html.erb:7:in `_app_views_drinks_index_html_erb__2517804442097637093_39438660'
+Started GET "/drinks/5" for 152.15.113.5 at 2018-11-29 15:28:15 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 5]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 5]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered liquors/_form.html.erb (10.9ms)
+  Rendered mixers/_form.html.erb (6.5ms)
+  Rendered drinks/show.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 251ms (Views: 241.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:28:18 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:28:22 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"kWBkm7TX4SUJj7yunXah6LlPO610pPp5PHcFyfMhHHiZoT/6ynnwEedNSvkHgxbQJUVG7VMgW8O77yeR4jyDtA=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:28:23 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"WZLfgpugr3izWkVGHmDegI/UkyuyDXcCUBqzCHpSZJhRU4Tj5Q6+TF2YsxGElWm4E97ua5WJ1rjXgpFQa0/7VA=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:28:40 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:33:38 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:34:32 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:37:32 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:38:03 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:38:05 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:38:15 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:38:43 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:38:53 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rvm/gems/ruby-2.4.1/gems/web-console-3.7.0/lib/web_console/middleware.rb:135
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 245ms (Views: 233.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:41:13 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:41:20 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (10.0ms)
+  Rendered drinks/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:41:25 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:18
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:42:01 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:42:03 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:43:38 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:45:15 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:45:29 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:45:36 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (7.2ms)
+  Rendered drinks/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:45:39 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:46:05 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...t color: yellow": expected "{", was ";"):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/drinks.scss:14
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__943700195831248155_70301112636800'
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:46:44 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:46:46 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:47:38 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:47:53 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:48:21 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:48:33 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:48:50 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:49:26 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:49:30 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.8ms)
+  Rendered drinks/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:49:32 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:49:33 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"3HWQifQ6Dzabj9R3iOxBbkTLfBFQn393sYIg2RLQmfDUtMvoipQeAnVNIiASGfZW2MEBUXcb3s02GgKBA80GPA=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:49:35 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.0ms)
+  Rendered drinks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:49:37 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:49:55 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:49:57 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:52:25 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.0ms)
+  Rendered drinks/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/drinks" for 152.15.113.5 at 2018-11-29 15:52:38 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xLji4lXosjVGeHcUmXHOWRBAsWUOxMi6UpL/722OVwmFcFkV0z1HiWk63DycTka+zEULkBJr4yGxYWmTj5yOGw==", "drink"=>{"name"=>"asda", "alcoholPerVolume"=>"88", "flavor"=>"bitter"}, "commit"=>"Create Drink"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+  [1m[36mDrink Create (0.7ms)[0m  [1m[32mINSERT INTO "drinks" ("name", "alcoholPerVolume", "flavor", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "asda"], ["alcoholPerVolume", 88.0], ["flavor", 0], ["created_at", "2018-11-29 15:52:38.714467"], ["updated_at", "2018-11-29 15:52:38.714467"]]
+  ↳ app/controllers/drinks_controller.rb:18
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drinks_controller.rb:18
+Redirected to https://1f40a1d277d049cea368c2503b5b0459.vfs.cloud9.us-east-2.amazonaws.com/drinks/6
+Completed 302 Found in 11ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/drinks/6" for 152.15.113.5 at 2018-11-29 15:52:38 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 6]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 6]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered liquors/_form.html.erb (6.9ms)
+  Rendered mixers/_form.html.erb (5.6ms)
+  Rendered drinks/show.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 58ms (Views: 48.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/drinks/6/liquors" for 152.15.113.5 at 2018-11-29 15:53:02 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LiquorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fZJ9MRGOCDjpWKDgS546NzOEMhPwptdEVU4TN6e2Z5N1UyZQbyAZDAeaVrfRa40Pr45PU9cidv7S1jFvtqv4Xw==", "liquor"=>{"name"=>"asfasf"}, "commit"=>"Create Liquor", "drink_id"=>"6"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/liquors_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/liquors_controller.rb:4
+  [1m[36mLiquor Create (0.2ms)[0m  [1m[32mINSERT INTO "liquors" ("name", "drink_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "asfasf"], ["drink_id", 6], ["created_at", "2018-11-29 15:53:02.137851"], ["updated_at", "2018-11-29 15:53:02.137851"]]
+  ↳ app/controllers/liquors_controller.rb:4
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/liquors_controller.rb:4
+Redirected to https://1f40a1d277d049cea368c2503b5b0459.vfs.cloud9.us-east-2.amazonaws.com/drinks/6
+Completed 302 Found in 11ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/drinks/6" for 152.15.113.5 at 2018-11-29 15:53:02 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 6]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 6]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.6ms)
+  Rendered liquors/_form.html.erb (1.5ms)
+  Rendered mixers/_form.html.erb (1.3ms)
+  Rendered drinks/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/drinks/6/mixers" for 152.15.113.5 at 2018-11-29 15:53:04 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MixersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yf6/nmgiP+bTLxwgP+n6zpxx1adfF+y4M5lUU695y7jBP+T/Fowu0j3t6nelHE32AHuo53iTTQK0AXYLvmRUdA==", "mixer"=>{"name"=>""}, "commit"=>"Create Mixer", "drink_id"=>"6"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/mixers_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mixers_controller.rb:5
+  [1m[36mMixer Create (0.2ms)[0m  [1m[32mINSERT INTO "mixers" ("name", "drink_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["drink_id", 6], ["created_at", "2018-11-29 15:53:04.592294"], ["updated_at", "2018-11-29 15:53:04.592294"]]
+  ↳ app/controllers/mixers_controller.rb:5
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mixers_controller.rb:5
+Redirected to https://1f40a1d277d049cea368c2503b5b0459.vfs.cloud9.us-east-2.amazonaws.com/drinks/6
+Completed 302 Found in 12ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/drinks/6" for 152.15.113.5 at 2018-11-29 15:53:04 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 6]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of mixers/_mixer.html.erb [1 times] (0.6ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 6]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.5ms)
+  Rendered liquors/_form.html.erb (1.6ms)
+  Rendered mixers/_form.html.erb (1.5ms)
+  Rendered drinks/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:53:11 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/2/edit" for 152.15.113.5 at 2018-11-29 15:54:00 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:26
+  Rendering drinks/edit.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (3.4ms)
+  Rendered drinks/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:54:02 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/drinks/2" for 152.15.113.5 at 2018-11-29 15:54:06 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sGc3Pu9rbwrXZ0y9boBEmrnVwi/lecHEh8pd4wSyVoO4pmxfkcV+Pjmluur0dfOiJd+/b8L9YH4AUn+7Fa/JTw==", "id"=>"2"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drinks_controller.rb:40
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 2]]
+  ↳ app/controllers/drinks_controller.rb:40
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 2]]
+  ↳ app/controllers/drinks_controller.rb:40
+  [1m[36mLiquor Destroy (0.6ms)[0m  [1m[31mDELETE FROM "liquors" WHERE "liquors"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/drinks_controller.rb:40
+  [1m[36mDrink Destroy (0.1ms)[0m  [1m[31mDELETE FROM "drinks" WHERE "drinks"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/drinks_controller.rb:40
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drinks_controller.rb:40
+Redirected to https://1f40a1d277d049cea368c2503b5b0459.vfs.cloud9.us-east-2.amazonaws.com/drinks
+Completed 302 Found in 13ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:54:06 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:54:11 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.0ms)
+  Rendered drinks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:54:13 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:56:00 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.8ms)
+  Rendered drinks/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:56:01 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:56:03 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:56:29 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.0ms)
+  Rendered drinks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:56:46 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.0ms)
+  Rendered drinks/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:56:55 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:12 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"ri7L+tzMBqxykrhTI+D1QTS+A5iC3tsC2/Jn1InInyum75CbomIXmJxQTgS5FUJ5qLR+2KVaerhcakWMmNUA5w=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:57:15 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:28 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"LJ4qcFQpCCFoo1Ve0lu9C7wMLioGDimqZ7oMJV2M5k0kX3ERKocZFYZhowlIrgozIAZTaiGKiBDgIi59TJF5gQ=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:57:29 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:30 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"Xl/q1YnckedJJLKpjez6asPA/44u3IhfFxeLbbij7cdWnrG093KA06fmRP4XGU1SX8qCzglYKeWQj6k1qb5yCw=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:35 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"XPFfrX4Ob2VKgKcj6xTERvezvXuXhOvdbxHBCfiEBctUMATMAKB+UaRCUXRx4XN+a7nAO7AASmfoieNR6ZmaBw=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:36 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"H41pTAnTHYl3z9AIwxhoCvCw1TiKuhJHdFoXnJg5+SsXTDItd30MvZkNJl9Z7d8ybLqoeK0+s/3zwjXEiSRm5w=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:57:37 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.1ms)
+  Rendered drinks/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:39 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"jmI8epxvtd94otSpswfS4YIqz4i5iYOf8E23WXBkJOSGo2cb4sGk65ZgIv4p8mXZHiCyyJ4NIiV31ZUBYXm7KA=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:57:39 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.8ms)
+  Rendered drinks/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:40 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"OjqKtLtnMTYcWio9ofI8S5180Pj76JZzbDuMR3lhpucy+9HVxckgAvKY3Go7B4tzAXatuNxsN8nro64faHw5Kw=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:57:41 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:42 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"lKcCdFUVBOiC1cSSs7YJxkyoOGpQNpwkuf7nhgvVqTmcZlkVK7sV3GwXMsUpQ77+0KJFKneyPZ4+ZsXeGsg29Q=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:57:48 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Parameters: {"authenticity_token"=>"cjVGu2jH1qzmAU6bL0ioh49rdp7H0MKTHogiecpwjwh69B3aFmnHmAjDuMy1vR+/E2EL3uBUYymZEAAh220QxA=="}
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:58:36 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/new" for 152.15.113.5 at 2018-11-29 15:58:38 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#new as HTML
+  Rendering drinks/new.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (1.9ms)
+  Rendered drinks/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:58:40 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/1/edit" for 152.15.113.5 at 2018-11-29 15:58:41 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:26
+  Rendering drinks/edit.html.erb within layouts/application
+  Rendered drinks/_form.html.erb (2.0ms)
+  Rendered drinks/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:58:43 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/1" for 152.15.113.5 at 2018-11-29 15:58:45 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered liquors/_form.html.erb (1.6ms)
+  Rendered mixers/_form.html.erb (1.3ms)
+  Rendered drinks/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:58:51 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks" for 152.15.113.5 at 2018-11-29 15:59:15 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#index as HTML
+  Rendering drinks/index.html.erb within layouts/application
+  [1m[36mDrink Load (0.2ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/views/drinks/index.html.erb:19
+  Rendered drinks/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drinks/1" for 152.15.113.5 at 2018-11-29 15:59:17 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered liquors/_form.html.erb (1.6ms)
+  Rendered mixers/_form.html.erb (1.4ms)
+  Rendered drinks/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/drinks/1/liquors" for 152.15.113.5 at 2018-11-29 15:59:24 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LiquorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zwe74I8EIXbITu3R8gMwXaIL8fnR2XdLc+CujQ08z+LijZqE7MaqYWoFQYf91wPxJOdH4GfitGiRwvyf5p7rbA==", "liquor"=>{"name"=>"2367"}, "commit"=>"Create Liquor", "drink_id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/liquors_controller.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/liquors_controller.rb:4
+  [1m[36mLiquor Create (0.6ms)[0m  [1m[32mINSERT INTO "liquors" ("name", "drink_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "2367"], ["drink_id", 1], ["created_at", "2018-11-29 15:59:24.979469"], ["updated_at", "2018-11-29 15:59:24.979469"]]
+  ↳ app/controllers/liquors_controller.rb:4
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/liquors_controller.rb:4
+Redirected to https://1f40a1d277d049cea368c2503b5b0459.vfs.cloud9.us-east-2.amazonaws.com/drinks/1
+Completed 302 Found in 13ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/drinks/1" for 152.15.113.5 at 2018-11-29 15:59:25 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.6ms)
+  Rendered liquors/_form.html.erb (1.5ms)
+  Rendered mixers/_form.html.erb (1.4ms)
+  Rendered drinks/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/drinks/1/mixers" for 152.15.113.5 at 2018-11-29 15:59:26 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MixersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/IOZZ69QgFM25nO3cHSaFxO01gJmXOV3e7QZm7yeYgD0QsIG0f6RZ9gkheDqgS0vj76rQkHYRM38LDvDrYP9zA==", "mixer"=>{"name"=>""}, "commit"=>"Create Mixer", "drink_id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mixers_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mixers_controller.rb:5
+  [1m[36mMixer Create (0.7ms)[0m  [1m[32mINSERT INTO "mixers" ("name", "drink_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["drink_id", 1], ["created_at", "2018-11-29 15:59:26.480089"], ["updated_at", "2018-11-29 15:59:26.480089"]]
+  ↳ app/controllers/mixers_controller.rb:5
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mixers_controller.rb:5
+Redirected to https://1f40a1d277d049cea368c2503b5b0459.vfs.cloud9.us-east-2.amazonaws.com/drinks/1
+Completed 302 Found in 13ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/drinks/1" for 152.15.113.5 at 2018-11-29 15:59:26 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:21
+  Rendered collection of mixers/_mixer.html.erb [1 times] (0.7ms)
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:33
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.5ms)
+  Rendered liquors/_form.html.erb (6.7ms)
+  Rendered mixers/_form.html.erb (1.6ms)
+  Rendered drinks/show.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/drinks/1" for 152.15.113.5 at 2018-11-29 16:00:36 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:16
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.6ms)
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:17
+  Rendered collection of mixers/_mixer.html.erb [1 times] (0.5ms)
+  Rendered collection of mixers/_mixer.html.erb [1 times] (0.1ms)
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.1ms)
+  Rendered liquors/_form.html.erb (1.6ms)
+  Rendered mixers/_form.html.erb (1.3ms)
+  Rendered drinks/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/drinks/1" for 152.15.113.5 at 2018-11-29 16:01:03 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDrink Load (0.1ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" WHERE "drinks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drinks_controller.rb:7
+  Rendering drinks/show.html.erb within layouts/application
+  [1m[36mLiquor Load (0.1ms)[0m  [1m[34mSELECT "liquors".* FROM "liquors" WHERE "liquors"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:16
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.6ms)
+  [1m[36mMixer Load (0.1ms)[0m  [1m[34mSELECT "mixers".* FROM "mixers" WHERE "mixers"."drink_id" = ?[0m  [["drink_id", 1]]
+  ↳ app/views/drinks/show.html.erb:17
+  Rendered collection of mixers/_mixer.html.erb [1 times] (0.5ms)
+  Rendered collection of mixers/_mixer.html.erb [1 times] (0.2ms)
+  Rendered collection of liquors/_liquor.html.erb [1 times] (0.2ms)
+  Rendered liquors/_form.html.erb (1.5ms)
+  Rendered mixers/_form.html.erb (1.3ms)
+  Rendered drinks/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.3ms)
+
+

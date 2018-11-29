@@ -1,13 +1,16 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// css for navigation bar
 #navContainer {
     width: 100%;
     display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; 
+    background-color: #3f4945;
 }
 
 // css for hover over the navi bar
@@ -16,8 +19,6 @@ li a:hover:not(.active) {
     color: white;
 }
 
-
-
 ul#nav {
     text-align: center;
     display: block;
@@ -25,7 +26,6 @@ ul#nav {
 }
 
 #nav li {
-    color: blue;
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
@@ -34,6 +34,7 @@ ul#nav {
 #nav li a {
     text-decoration: none;
     font-size: 32px;
+    color: yellow; // css for changing link color in navigatin bar
 }
 
 #main {
