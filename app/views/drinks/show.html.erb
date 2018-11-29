@@ -1,0 +1,44 @@
+
+<div id="drink_body">
+<div class="table">
+  <div class="table-row">
+    <div class="table-head">Drink Name</div>
+    <div class="table-head">Alc Content</div>
+    <div class="table-head">Flavor</div>
+    <div class="table-head">Liquors</div>
+     <div class="table-head">Mixers</div>
+
+
+  </div>
+  <div class="table-row">
+    <div class="table-cell"><%= @drink.name %></div>
+    <div class="table-cell"><%= @drink.alcoholPerVolume %></div>
+    <div class="table-cell"><%= @drink.flavor %></div>
+    <div class="table-cell"> <%= render @drink.liquors %>   </div>
+    <div class="table-cell"> <%= render @drink.mixers %>   </div>
+
+    
+  </div>
+</div>
+
+
+
+
+<h2>Add a Liquor:</h2>
+<%= render 'liquors/form' %>
+
+<h2>Add a Mixer:</h2>
+<%= render 'mixers/form' %>
+
+
+
+
+
+
+
+<%= link_to 'Drink List', drinks_path %>
+</div>
+<footer>
+    <h4><strong>Please Drink Responsibly</strong></h4>
+    <p>ITSC 3155     |      The Squad (Group 9-2)       |       University of North Carolina at Charlotte     |     2018</p>
+</footer>

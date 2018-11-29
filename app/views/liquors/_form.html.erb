@@ -1,0 +1,11 @@
+<%= form_for([@drink, @drink.liquors.build]) do |f| %>
+<p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+    
+</p>
+
+<p>
+    <%= f.submit %>
+</p>
+<% end %>

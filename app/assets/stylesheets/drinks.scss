@@ -22,6 +22,13 @@ li a:hover:not(.active) {
     
 }
 
+.drink_body {
+    background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 
 
 ul#nav {
@@ -57,13 +64,13 @@ margin-top: 12%;
 
     background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
-    width: 48%;
+    width: 100%;
     max-width: 700px;
     margin: 7px;
-    padding: 20px;
+    padding: 30px;
     position: static;
     border-top: 10px solid #241b26;
-    float: left;
+   
     min-height: 400px;
     max-height: 400px;
     > p.p {
@@ -84,8 +91,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: lightgray;
-    color: black;
+    background-color: green;
+    color: white;
     text-align: center;
 }
-

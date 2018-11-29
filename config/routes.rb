@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  
   get 'drinks/index'
+  get 'drinks/create'
+  get 'drinks/result' => 'drinks#result'
   
-  get 'drinks/search' => 'drinks#search'
-  get 'drinks/search/results' => 'drinks#results'
-
-  
-  resources :drinks, :liquors, :mixers, :drinkliquors, :drinkmixers
+  resources :drinks do
+    resources :mixers, :liquors
+  end
   
   root 'welcome#index'
-  
-  root :to => 'drinks#index'
-  root :to => 'drinks#search'
-
-
 end

@@ -1,49 +1,46 @@
-    <ul id="nav">
-        
-        <li> <%= link_to "Home", drinks_path, class: "button_to", :method => "get" %> </li>
+<%= form_for @drink do |f| %>
+ 
+  <% if @drink.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@drink.errors.count, "error") %> prohibited
+        this drink from being saved:
+      </h2>
+      <ul>
+        <% @drink.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+<p>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name %>
 
-        <li> <%= link_to "Search", drinks_search_path, class: "button_to", :method => "get" %> </li>
-        
+</p>
 
-    </ul>
+<p>
+    <%= f.label :alcoholPerVolume %> <br>
+    <%= f.text_area :alcoholPerVolume %>
 
-<%= form_for(:drink, url: drinks_search_results_path, method: :get ) do |f| %>
+</p>
 
-<div class="box2">
-  <%= f.label Drink.name, "Drinks by Name" %><br>
-  <%= f.collection_check_boxes :Drink_ids, Drink.all, :id, :name %>
-</div>
+<p>
+    <%= f.label :flavor %> <br>
+    <%= f.text_area :flavor %>
 
-<div class="box3">
-  <%= f.label Liquor.name, "Liquor" %><br>
-  <%= f.collection_check_boxes :Liquor_ids, Liquor.all, :id, :name %>
-</div>
-
-<div class="box2">
-  <%= f.label Mixer.name, "Mixer" %><br>
-  <%= f.collection_check_boxes :Mixer_ids, Mixer.all, :id, :name %>
-</div>
-
-<div class="box3">
-    <%= f.label :flavor %><br>
-    <%= f.select :flavor, Drink.flavors.keys %>
-</div>
-
-<div class="Submit">
- <%= f.submit "Submit", class: "btn btn-default" %> 
- <% end %>
-</div>
-
-   
-   
-
-    
-</body>
+</p>
 
 
 
+<p>
+    <%= f.submit %>
+</p>
 
 
+ 
+<% end %>
 
 <footer>
     <h4><strong>Please Drink Responsibly</strong></h4>
