@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <body class="drink_body">
     <div class="drink_div">
     <div id="navContainer">
@@ -7,6 +8,11 @@
     <section class="box">
     <h2>Your Drink Recipes</h2>
    
+=======
+<h1>Drink Results</h1>
+<%= link_to 'New drink', new_drink_path %>
+
+>>>>>>> 1f6cf5ca66cc85a489c423124c0167e9db203f98
 <table>
   <tr>
     <th>Name</th>
@@ -19,8 +25,12 @@
       <td><%= drink.name %></td>
       <td><%= drink.alcoholPerVolume %></td>
       <td><%= drink.flavor %></td>
+<<<<<<< HEAD
       <td><%= link_to 'Add Mixer/Liquor', drink_path(drink) %></td>
 
+=======
+      <td><%= link_to 'Show', drink_path(drink) %></td>
+>>>>>>> 1f6cf5ca66cc85a489c423124c0167e9db203f98
       <td><%= link_to 'Edit', edit_drink_path(drink) %></td>
       <td><%= link_to 'Destroy',
                   drink_path(drink),
@@ -28,6 +38,7 @@
                   data: { confirm: 'Are you sure?' }%></td>
     </tr>
   <% end %>
+<<<<<<< HEAD
   <%= link_to 'New drink', new_drink_path %>
 
 </table>
@@ -49,3 +60,6 @@
 
 
 
+=======
+</table>
+>>>>>>> 1f6cf5ca66cc85a489c423124c0167e9db203f98

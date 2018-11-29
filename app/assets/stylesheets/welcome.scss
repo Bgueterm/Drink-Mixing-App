@@ -10,7 +10,11 @@
 }
 
 .welcome_body {
+<<<<<<< HEAD
     background: url(drinkBG.png);
+=======
+    background: url(blur-bokeh-dark-8395.jpg);
+>>>>>>> 1f6cf5ca66cc85a489c423124c0167e9db203f98
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -51,15 +55,25 @@
 }
 
 input[id="toggle-on"]:hover + label {
+<<<<<<< HEAD
     background-color: #3f4945;
     border: thin solid #ffffff ;
+=======
+    background-color: #39d22d;
+    border: thin solid #39d22d;
+>>>>>>> 1f6cf5ca66cc85a489c423124c0167e9db203f98
     cursor: default;
     color: #E6E6E6;
 }
 
 input[id="toggle-off"]:hover + label {
+<<<<<<< HEAD
     background-color: #3f4945;
     border: thin solid #ffffff ;
+=======
+    background-color: #ee3624;
+    border: thin solid #ee3624;
+>>>>>>> 1f6cf5ca66cc85a489c423124c0167e9db203f98
     cursor: default;
     color: #E6E6E6;
 }
