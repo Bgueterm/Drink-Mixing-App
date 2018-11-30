@@ -10,20 +10,80 @@ class Drink < ApplicationRecord
     validates :name, presence: true, length: { minimum: 3 }
     validates :alcoholPerVolume, presence: true, numericality: { greater_than_or_equal_to: 0.00, less_than_or_equal_to: 100.00}
     
-    def to_s
-        "Name:#{self.name} :#{self.liquor.name} :#{self.mixer.name}"
-    end
+    # def to_s
+    #     "Name:#{self.name} :#{self.liquor.name} :#{self.mixer.name}"
+    # end
     
-    def self.search(search)
-        if search
-            drink = Drink.find_by(name: search)
+    def self.search(name, liquors, mixers, flavor)
+        if name
+            drink = Drink.find_by(name: name)
             if drink
-                self.where(drink_id: drink)
+                drinksScored = { drink => 9999 }
+                search_match(liquors, mixers, flavor, drinksScored)
+                
             else
-                Drink.all
+                search_match(liquors, mixers, flavor)
             end
+            
         else
-            Drink.all
+            search_match(liquors, mixers, flavor)
         end
     end
+    
+    private
+        def self.search_match(liquors, mixers, flavor, drinksScored=nil)
+            if liquors then liquors = liquors[:Liquor_ids] else liquors = nil end
+            if mixers then mixers = mixers[:Mixer_ids] else mixers = nil end
+            
+            if liquors or mixers or flavor
+                if drinksScored then drinksScored = drinksScored else drinksScored = {} end
+                    
+                if not liquors.empty?
+                    liquors[1..-1].each do |liquor|
+                        add_result(DrinkLiquor.where(liquor_id: liquor), drinksScored)
+                    end
+                end
+                
+                if not mixers.empty?
+                    mixers[1..-1].each do |mixer|
+                        add_result(DrinkMixer.where(mixer_id: mixer), drinksScored)
+                    end
+                end
+                
+                if not flavor.empty?
+                    drinks = Drink.where(flavor: flavor)
+                    if not drinks.empty?
+                        drinks.to_a.each do |drink|
+                            if drinksScored[drink] 
+                                drinksScored[drink] += 1 
+                            else 
+                                drinksScored[drink] = 1 
+                            end
+                        end
+                    end
+                end
+                
+                drinksScored.sort_by { |k, v| v }.collect(&:first).reverse
+                
+            elsif drinksScored
+                drinksScored.keys[0]
+                
+            else
+                Drink.all
+                
+            end
+        end
+        
+        def self.add_result(ingreds, drinksScored)
+            if not ingreds.empty?
+                ingreds.to_a.each do |ingred|
+                    drink = Drink.find(ingred.drink_id)
+                    if drinksScored[drink] 
+                        drinksScored[drink] += 1 
+                    else 
+                        drinksScored[drink] = 1 
+                    end
+                end
+            end
+        end
 end

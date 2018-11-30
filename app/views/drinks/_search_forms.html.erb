@@ -1,8 +1,8 @@
-<%= form_tag(search_path, method: :get) do %>
+<%= form_tag(search_path.split('?').first, method: :get) do %>
 
 <div class="box2">
-  <%= label_tag "drinkName", "Drinks by Name" %><br>
-  <%= select_tag :drink, options_from_collection_for_select(Drink.all, :id, :name), include_blank: true %>
+  <%= label_tag "drinkName", "Name" %><br>
+  <%= text_field_tag :name, params[:name] %>
 </div>
 
 <div class="box3">
@@ -21,10 +21,11 @@
 
 <div class="box3">
   <%= label_tag "drinkFlavor", "Flavor" %><br>
-  <%= select_tag :drink, options_for_select(Drink.flavors), include_blank: true %>
+  <%= select_tag :flavor, options_for_select(Drink.flavors), include_blank: true %>
 </div>
 
 <div class="Submit">
   <%= submit_tag "Search", class: "btn btn-default" %> 
 </div>
+
 <% end %>

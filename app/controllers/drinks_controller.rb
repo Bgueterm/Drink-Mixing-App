@@ -1,13 +1,12 @@
 class DrinksController < ApplicationController
     
     def index
-    @drinks = Drink.all
-  if params[:id]
-    @drinks = Drink.results(params[:results]).order("created_at DESC")
-  else
-    @drinks = Drink.all.order('created_at DESC')
-  end
-
+        @drinks = Drink.all
+        if params[:id]
+            @drinks = Drink.results(params[:results]).order("created_at DESC")
+        else
+            @drinks = Drink.all.order('created_at DESC')
+        end
     end
     
     def new
@@ -17,10 +16,10 @@ class DrinksController < ApplicationController
 
     def show
         @drink = Drink.find(params[:id])
-        redirect_to drinks__search_results_path
+        redirect_to drinks_search_results_path
     end
     
-     def create
+    def create
         @drink = Drink.new(drink_params)
 
         if @drink.save
@@ -30,19 +29,21 @@ class DrinksController < ApplicationController
         end
     end
     
-    def results
-    @drinks = Drink.all
-  if params[:id]
-    @drinks = Drink.results(params[:results]).order("created_at DESC")
-  else
-    @drinks = Drink.all.order('created_at DESC')
-  end  
-    end
+    # def results
+    #     @drinks = Drink.all
+    #     if params[:id]
+    #         @drinks = Drink.results(params[:results]).order("created_at DESC")
+    #     else
+    #         @drinks = Drink.all.order('created_at DESC')
+    #     end  
+    # end
     
     def search
+        @drinks = Drink.search(params[:name], params[:liquor], 
+                               params[:mixer], params[:flavor])
     end
     
-        def edit
+    def edit
         @drink = Drink.find(params[:id])
     end
     
@@ -67,6 +68,6 @@ class DrinksController < ApplicationController
     private 
         def drink_params
             params.require(:drink).permit(:name, :alcoholPerVolume, :flavor, 
-            :description, liquor_ids: [], mixer_ids: [])
+            :description, :search, liquor_ids: [], mixer_ids: [])
         end
 end
