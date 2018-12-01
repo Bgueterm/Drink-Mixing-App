@@ -1,27 +1,36 @@
 <%= form_tag(search_path.split('?').first, method: :get) do %>
 
 <div class="box2">
-  <%= label_tag "drinkName", "Name" %><br>
-  <%= text_field_tag :name, params[:name] %>
-</div>
 
-<div class="box3">
-  <%= label_tag "liquorName", "Liquor" %><br>
-  <div id="liquorBoxes">
-    <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name %>
+  <section class="drink_name">
+    <%= text_field_tag :name, params[:name], placeholder: "Type in drink name..." %>    
+  </section>
+  <br>
+  
+  <div class="box3">
+    <%= label_tag "liquorName", "Liquor" %><br>
+      <section class="liquor_name">
+    <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name do |b| %>
+      <%= b.label { b.check_box + b.text } %><br>
+    <% end %>   
+  </section>
+  <br>
   </div>
-</div>
-
-<div class="box2">
-  <%= label_tag "mixerName", "Mixer" %><br>
-  <div id="mixerBoxes">
-    <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name %>
+  <div class="box3">
+    <%= label_tag "mixerName", "Mixer" %><br>
+    <section class="mixer_name">
+    <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name do |b| %>
+      <%= b.label { b.check_box + b.text } %><br>
+    <% end %>
+  </section>
+  <br>
   </div>
-</div>
-
-<div class="box3">
-  <%= label_tag "drinkFlavor", "Flavor" %><br>
-  <%= select_tag :flavor, options_for_select(Drink.flavors), include_blank: true %>
+  <div class="box3">
+  <section class="drink_flavor">
+    <%= label_tag "drinkFlavor", "Flavor" %><br>
+    <%= select_tag :flavor, options_for_select(Drink.flavors), include_blank: true %>
+  </section>
+  </div>
 </div>
 
 <div class="Submit">
