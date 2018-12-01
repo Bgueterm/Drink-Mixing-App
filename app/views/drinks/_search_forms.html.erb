@@ -8,14 +8,18 @@
 <div class="box3">
   <%= label_tag "liquorName", "Liquor" %><br>
   <div id="liquorBoxes">
-    <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name %>
+    <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name do |b| %>
+      <%= b.label { b.check_box } %><br>
+    <% end %>
   </div>
 </div>
 
 <div class="box2">
   <%= label_tag "mixerName", "Mixer" %><br>
   <div id="mixerBoxes">
-    <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name %>
+    <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name do |b| %>
+      <%= b.label { b.check_box } %><br>
+    <% end %>
   </div>
 </div>
 
