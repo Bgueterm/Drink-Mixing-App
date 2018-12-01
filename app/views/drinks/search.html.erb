@@ -1,16 +1,21 @@
 <%= render 'header' %>
 
 <%= render 'search_forms' %>
-<br>
-<br>
-<br>
-<div id="results">
-    <H2>RESULTS</H2>
-    <% @drinks.each do |drink| %>
-        <div>
-            <section class="drink_result"><%= drink.name %></section>
-        </div>
-    <% end %>
+
+<div class="results">
+    <div class="results_region">
+            <H2>RESULTS</H2>
+    </div>
+    <div class="drinks_returned">
+        <% @drinks.each do |drink| %>
+            <section class="drink_result">
+                <section class="drinkname"><%= drink.name %> || <%= drink.flavor %></section>
+                <section class="drinkdescription"><%= drink.description %></section>
+            </section>
+            <br>
+            <br>
+        <% end %>
+    </div>
 </div>
 
 <footer>

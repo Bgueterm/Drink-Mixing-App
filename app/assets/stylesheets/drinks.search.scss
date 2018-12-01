@@ -6,7 +6,6 @@
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
-    background-color: lightblue;
     color: black;
 }
 
@@ -15,10 +14,15 @@ li a:hover:not(.active) {
 ul#nav {
     text-align: center;
     display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #fcfcfc;
 }
 
 #nav li {
-    color: blue;
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
@@ -28,6 +32,7 @@ ul#nav {
     text-decoration: none;
     font-size: 32px;
 }
+
 body
 {
   background: url(drinkBG.png);
@@ -59,12 +64,13 @@ body
 
 
 .box2 {
-    padding-top: 40px;
+    padding-top: 5px;
     padding-bottom: 20px;
     background-color: #fcfcfc;
     width: 100%;
-    height: 325px;
+    height: 340px;
     color: #241b26;
+    font-family: Verdana;
     > section.drink_name {
         input[type = text] {
             width: 80%;
@@ -85,11 +91,12 @@ body
         padding: 20px;
         position: static;
         float: left;
-
+        font-family: Verdana;
+        font-size: 25px;
         section.liquor_name label {
             border: 2px solid #ccc;
             color: black;
-            width: 125px;
+            width: 130px;
             margin: 1px;
             height: 25px;
             padding: 2px;
@@ -97,19 +104,22 @@ body
             border-radius: 1px;
             display: inline-block;
             text-align: left;
+            font-size: 16px;
         }
 
         section.mixer_name label {
             border: 2px solid #ccc;
             color: black;
-            width: 125px;
+            width: 150px;
             margin: 1px;
-            height: 25px;
+            height: 26px;
             padding: 2px;
+            top: 1px;
             background-color: #f8f8f8;
             border-radius: 1px;
             display: inline-block;
             text-align: left;
+            font-size: 16px;
         }
 
         > section.drink_flavor {
@@ -118,7 +128,7 @@ body
                 background-color: #f8f8f8;
                 text-transform: uppercase;
                 color: #47515c;
-                padding: 3px 19px 3px 19px;
+                padding: 3px 25px 3px 25px;
                 width: auto;
                 cursor: pointer;
                 margin-bottom: 10px;
@@ -127,11 +137,39 @@ body
     }
 }
 
-
-.drink_result {
-
-    padding-top: 5px;
+.results {
     width: 100%;
-    height: 25px;
-    background-color: #fcfcfc;
+    height: auto;
+    padding-bottom: 20px;
+    background-color:#fcfcfc;
+    > div.results_region {
+        h2 {
+            padding-top: 15px;
+        }
+        
+        width: 100%;
+        height: 55px;
+        background-color: #f8f8f8;
+    }
+    
+    > div.drinks_returned {
+        > section.drink_result {
+            padding-top: 5px;
+            width: 100%;
+            height: 50px;
+            background-color: #fcfcfc;
+            padding-bottom: 10px;
+            >section.drinkdescription {
+                width: 50%;
+                margin-left: 20px;
+                margin-right: 20px;
+                position: relative;
+                top: 90%;
+                left: 22.5%;
+                transform: translateY(-50%); 
+            }
+        }
+    }
 }
+
+

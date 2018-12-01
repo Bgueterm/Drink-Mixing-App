@@ -15,11 +15,7 @@
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
-    background-color: lightblue;
     color: black;
-    background-color: #999999;
-    color: white;
-    
 }
 
 
@@ -31,7 +27,6 @@ ul#nav {
 }
 
 #nav li {
-    color: #241b26;
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
