@@ -30,8 +30,7 @@ li a:hover:not(.active) {
 main {
     flex: 1 0 auto;
     width: 995px;
-    margin: auto;
-    margin-bottom: 3%;
+    margin: 3% auto 3% auto;
 }
 
 body {
@@ -66,9 +65,9 @@ ul#nav {
     font-size: 32px;
 }
 
-#clearfix {
-    margin-top: 3%;
-}
+// #clearfix {
+//     margin-top: 3%;
+// }
 
 
 * {
@@ -83,8 +82,9 @@ ul#nav {
     width: 48%;
     max-width: 700px;
     margin: 7px;
+    margin-top: 0;
     padding: 20px;
-    position: static;
+    padding-top: 0;
     border-top: 10px solid #241b26;
     float: left;
     min-height: 400px;
