@@ -1,29 +1,57 @@
-// Place all the styles related to the Welcome controller here.
+// Place all the styles related to the Drinks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// #navContainer {
+//     width: 100%;
+//     display: block;
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+// }
+
 #navContainer {
+    color: #aca8ad;
+    margin: auto auto 0 auto;
+    flex-shrink: 0;
+    background-color: #241b26;
+    text-align: center;
+    font-family: Verdana;
     width: 100%;
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
 }
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
-    color: black;
+    color: #4CAF50;
 }
 
+main {
+    flex: 1 0 auto;
+    width: 995px;
+    margin: auto;
+    margin-bottom: 3%;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
 
 ul#nav {
     text-align: center;
     display: block;
     padding: 0px;
+    color: #aca8ad;
+    background-color: #241b26;
 }
 
 #nav li {
@@ -39,7 +67,7 @@ ul#nav {
 }
 
 #clearfix {
-margin-top: 12%;
+    margin-top: 3%;
 }
 
 
@@ -72,15 +100,3 @@ margin-top: 12%;
     clear: both;
     display: table;
 }
-
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgray;
-    color: black;
-    text-align: center;
-}
-

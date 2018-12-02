@@ -7,11 +7,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= if controller_name == 'drinks' then render 'drinks/header' end %>
   </head>
-
   <body>
+    <%= if controller_name == 'drinks' then render 'drinks/header' end %>
     <%= yield %>
+    <%= render './footer' %>
   </body>
-  <%= render './footer' %>
 </html>

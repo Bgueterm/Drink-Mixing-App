@@ -5,46 +5,48 @@
 
 
 // css for hover over the navi bar
-li a:hover:not(.active) {
-    color: black;
+// li a:hover:not(.active) {
+//     color: black;
+// }
+
+main {
+    flex: 1 0 auto;
 }
 
+// ul#nav {
+//     text-align: center;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     margin-bottom: -10px;
+//     padding-top: 10px;
+//     padding-bottom: 20px;
+//     background-color: #fcfcfc;
+// }
 
+// #nav li {
+//     display: inline-block;
+//     margin-left: 10px;
+//     margin-right: 10px;
+// }
 
-ul#nav {
-    text-align: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-bottom: -10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    background-color: #fcfcfc;
-}
+// #nav li a {
+//     text-decoration: none;
+//     font-size: 32px;
+// }
 
-#nav li {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#nav li a {
-    text-decoration: none;
-    font-size: 32px;
-}
-
-body
-{
-  background: url(drinkBG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    text-align:center;
-    width:995px;
-    margin:0 auto;
-    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
-}
+// body
+// {
+//   background: url(drinkBG.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     background-position: center;
+//     text-align:center;
+//     // width:995px;
+//     // margin:0 auto;
+//     font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+// }
 
 
 .upper {
@@ -63,7 +65,9 @@ body
 
 
 .box2 {
-    padding-top: 5px;
+    margin-top: 3%;
+    border-top: 10px solid #241b26;
+    padding-top: 20px;
     background-color: #fcfcfc;
     width: 100%;
     height: auto;
@@ -84,7 +88,6 @@ body
     }
     
     >.box3 {
-        background-color: #fcfcfc;
         width: 33.333333%;
         margin: 0px;
         padding: 20px;
@@ -139,8 +142,9 @@ body
 .results {
     width: 100%;
     height: auto;
+    border-top: 10px solid #241b26;
     padding-bottom: 20px;
-    background-color:#fcfcfc;
+    background-color: #fcfcfc;
     > div.results_region {
         h2 {
             padding-top: 15px;
@@ -148,7 +152,6 @@ body
         
         width: 100%;
         height: 55px;
-        background-color: #f8f8f8;
     }
     
     > div.drinks_returned {
@@ -156,7 +159,6 @@ body
             padding-top: 5px;
             width: 100%;
             height: 50px;
-            background-color: #fcfcfc;
             padding-bottom: 10px;
             >section.drinkdescription {
                 width: 50%;
