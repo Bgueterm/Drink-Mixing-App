@@ -70,27 +70,28 @@ ul#nav {
 // }
 
 
-* {
-    box-sizing: border-box;
-    
-}
 
 .box {
 
-    background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 48%;
-    max-width: 700px;
-    margin: 7px;
-    margin-top: 0;
-    padding: 20px;
-    padding-top: 0;
     border-top: 10px solid #241b26;
-    float: left;
-    min-height: 400px;
-    max-height: 400px;
+    background-color: #fcfcfc;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    overflow: auto;
+    padding-left: 50px;
+    padding-right: 60px;
+    color: #241b26;
+    text-align: left;
+    font-family: Verdana;
     > p.p {
         font-size: 20px;
+    }
+    > h2 {
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+        
     }
 }
 
