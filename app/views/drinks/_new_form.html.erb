@@ -14,25 +14,23 @@
     </div>
   <% end %>
  
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
+ <div class="new_box">
+  <section class="drink_name">
+    Drink Name: <%= f.text_field :name , placeholder: "Name of new drink..." %>
+  </section>
  
-  <p>
-    <%= f.label :alcoholPerVolume, "Alcohol Per Volume" %><br>
-    <%= f.number_field :alcoholPerVolume, class: :text_field, step: 0.01, min: 0.00, max: 100.00 %>
-  </p>
+  <section class="alcoholPerVolumeRegion">
+    Alcohol By Volume: <%= f.number_field :alcoholPerVolume, class: :text_field, step: 0.01, min: 0.00, max: 100.00, placeholder: "ABV percent..."%>
+  </section>
  
  <%= render 'drink_dropdowns', f: f %>
  
-  <p>
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </p>
+  <section class="descriptionregion">
+    <%= f.text_area :description, placeholder: "Description of new drink..." %>
+  </section>
  
   <p>
     <%= f.submit %>
   </p>
- 
+ </div>
 <% end %>
