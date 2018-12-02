@@ -19,9 +19,9 @@
 
 .welcome_div {
     
-    color: #e6e3e7;
+    color: #241b26;
     left: 0;
-    top: 39%;
+    top: 34%;
     position: fixed;
     width: 100%;
     font-size: 20px;
@@ -31,7 +31,7 @@
     
     
       position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
@@ -44,9 +44,6 @@
     font-size: 18px;
 }
 
-
-
-
 footer {
     color: #aca8ad;
     position: fixed;
@@ -58,9 +55,10 @@ footer {
     font-family: Verdana;
 }
 .welcome_div:after {
-    opacity: 0.90;
+    opacity: 0.80;
+    filter: blur(1px);
     border-radius: 15px;
-    background: #241b26;
+    background: #fcfcfc;
     width: 715px;
     height: 200px;
     z-index: -1;
@@ -80,6 +78,11 @@ input[type =button], input[type=submit] {
     width: 100%;
     text-decoration: none;
     cursor: pointer;
+}
+
+.button_to {
+    color: #aca8ad;
+    font-family: Verdana;
 }
 
 .button_to :hover {
