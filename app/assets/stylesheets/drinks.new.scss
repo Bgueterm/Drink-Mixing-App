@@ -1,0 +1,146 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+// css for hover over the navi bar
+li a:hover:not(.active) {
+    color: black;
+}
+
+
+
+ul#nav {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #fcfcfc;
+}
+
+#nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 32px;
+}
+
+body
+{
+  background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align:center;
+    width:995px;
+    margin:0 auto;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+
+}
+
+
+.upper {
+  display:inline-block;
+   width: 50%;
+    box-sizing: border-box;
+
+
+}
+
+.lower {
+  display:inline-block;
+     width: 50%;
+
+}
+
+
+.new_box {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 500px;
+    color: #241b26;
+    font-family: Verdana;
+    
+    > section.drink_name {
+        text-align: left;
+        padding-left: 73px;
+        input[type = text] {
+            width: 70%;
+            padding: 12px 12px;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+        }
+    }
+    > section.alcoholPerVolumeRegion {
+        margin-top: 5px;
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 1px;
+        .text_field {
+            width: 20%;
+            padding: 12px 12px;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+        }
+    }
+    > section.flavors {
+        text-align: left;
+        padding-left: 120px;
+        padding-top: 5px;
+        select {                
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+            text-transform: uppercase;
+            color: #47515c;
+            padding: 12px 25px 12px 25px;
+            width: 182px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    }
+    > section.liquors {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        padding-left: 120px;
+    }
+    > section.mixers {
+        padding-top: 12px;
+        padding-bottom: 17px;
+        text-align: left;
+        padding-left: 127px;
+        label {
+            color: black;
+            margin: 1px;
+            height: 26px;
+            top: 1px;
+            text-align: left;
+            font-size: 16px;
+        }
+    }
+
+    textarea {
+        width: 80%;
+        height: 200px;
+        padding: 12px 12px;
+        margin-top: 2px;
+        border: 2px solid #ccc;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+}
+    
+* {
+    box-sizing: border-box;
+}
