@@ -1,0 +1,175 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+// css for hover over the navi bar
+// li a:hover:not(.active) {
+//     color: black;
+// }
+
+// main {
+//     flex: 1 0 auto;
+// }
+
+// ul#nav {
+//     text-align: center;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     margin-bottom: -10px;
+//     padding-top: 10px;
+//     padding-bottom: 20px;
+//     background-color: #fcfcfc;
+// }
+
+// #nav li {
+//     display: inline-block;
+//     margin-left: 10px;
+//     margin-right: 10px;
+// }
+
+// #nav li a {
+//     text-decoration: none;
+//     font-size: 32px;
+// }
+
+// body
+// {
+//   background: url(drinkBG.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     background-position: center;
+//     text-align:center;
+//     // width:995px;
+//     // margin:0 auto;
+//     font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+// }
+
+
+.upper {
+  display:inline-block;
+   width: 50%;
+    box-sizing: border-box;
+
+
+}
+
+.lower {
+  display:inline-block;
+     width: 50%;
+
+}
+
+
+.box2 {
+    border-top: 10px solid #241b26;
+    padding-top: 20px;
+    background-color: #fcfcfc;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    color: #241b26;
+    font-family: Verdana;
+    > section.drink_name {
+        input[type = text] {
+            width: 80%;
+            padding: 12px 12px;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    >.box3 {
+        width: 33.333333%;
+        margin: 0px;
+        padding: 20px;
+        position: static;
+        float: left;
+        font-family: Verdana;
+        font-size: 25px;
+        section.liquor_name label {
+            border: 2px solid #ccc;
+            color: black;
+            width: 130px;
+            margin: 1px;
+            height: 25px;
+            padding: 2px;
+            background-color: #f8f8f8;
+            border-radius: 1px;
+            display: inline-block;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        section.mixer_name label {
+            border: 2px solid #ccc;
+            color: black;
+            width: 150px;
+            margin: 1px;
+            height: 26px;
+            padding: 2px;
+            top: 1px;
+            background-color: #f8f8f8;
+            border-radius: 1px;
+            display: inline-block;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        > section.drink_flavor {
+            select {
+                border: 2px solid #ccc;
+                background-color: #f8f8f8;
+                text-transform: uppercase;
+                color: #47515c;
+                padding: 3px 25px 3px 25px;
+                width: auto;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.results {
+    width: 100%;
+    height: auto;
+    border-top: 10px solid #241b26;
+    padding-bottom: 20px;
+    background-color: #fcfcfc;
+    > div.results_region {
+        h2 {
+            padding-top: 15px;
+        }
+        
+        width: 100%;
+        height: 55px;
+    }
+    
+    > div.drinks_returned {
+        > section.drink_result {
+            padding-top: 5px;
+            width: 100%;
+            height: 50px;
+            padding-bottom: 10px;
+            >section.drinkdescription {
+                width: 50%;
+                margin-left: 20px;
+                margin-right: 20px;
+                position: relative;
+                top: 90%;
+                left: 22.5%;
+                transform: translateY(-50%); 
+            }
+        }
+    }
+}
+
+

@@ -7,6 +7,7 @@
         <table class="welcome_table">
             <tr>
                 <th>
+<<<<<<< HEAD
                     <form method="get" action='drinks/index' class="button_to">
                         <input id="toggle-off" name="toggle" type="submit" class= "submit_button"><label for="toggle-off" class= "welcome_label">Not Quite</label>
                     </form>
@@ -15,10 +16,18 @@
                     <form method="get" action='drinks/index' class="button_to">
                         <input id="toggle-on" name="toggle" type="submit" class= "submit_button"><label for="toggle-on" class="welcome_label">Heck Yeah!</label>
                     </form>
+=======
+                    <%= button_to "    Not yet!    ", 'https://kidshealth.org/en/teens/alcohol.html', class: "toggle-off", :method => "get" %>
+                </th>
+                <th>
+                    <%= button_to "Heck yeah!", drinks_path, class: "toggle-on", :method => "get" %>
+
+>>>>>>> master
                 </th>
             </tr>
         </table>
     </div>
+<<<<<<< HEAD
 </body>
 
 <footer>
@@ -29,3 +38,6 @@
     <h4><strong>Please Drink Responsibly</strong></h4>
     <p>ITSC 3155     |      The Squad (Group 9-2)       |       University of North Carolina at Charlotte     |     2018</p>
 </footer>
+=======
+</body>
+>>>>>>> master

@@ -1,0 +1,86 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_box {
+    padding-top: 5px;
+    border-top: 10px solid #241b26;
+    padding-bottom: 20px;
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 500px;
+    color: #241b26;
+    font-family: Verdana;
+    
+    > section.drink_name {
+        text-align: left;
+        padding-left: 73px;
+        input[type = text] {
+            width: 70%;
+            padding: 12px 12px;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+        }
+    }
+    > section.alcoholPerVolumeRegion {
+        margin-top: 5px;
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 1px;
+        .text_field {
+            width: 20%;
+            padding: 12px 12px;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+        }
+    }
+    > section.flavors {
+        text-align: left;
+        padding-left: 120px;
+        padding-top: 5px;
+        select {                
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+            text-transform: uppercase;
+            color: #47515c;
+            padding: 12px 25px 12px 25px;
+            width: 182px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    }
+    > section.liquors {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        padding-left: 120px;
+    }
+    > section.mixers {
+        padding-top: 12px;
+        padding-bottom: 17px;
+        text-align: left;
+        padding-left: 127px;
+        label {
+            color: black;
+            margin: 1px;
+            height: 26px;
+            top: 1px;
+            text-align: left;
+            font-size: 16px;
+        }
+    }
+
+    textarea {
+        width: 80%;
+        height: 200px;
+        padding: 12px 12px;
+        margin-top: 2px;
+        border: 2px solid #ccc;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+}
+    
+* {
+    box-sizing: border-box;
+}

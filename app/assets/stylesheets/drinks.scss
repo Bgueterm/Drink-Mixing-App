@@ -1,28 +1,57 @@
-// Place all the styles related to the Welcome controller here.
+// Place all the styles related to the Drinks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// css for navigation bar
+
+// #navContainer {
+//     width: 100%;
+//     display: block;
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+// }
+
 #navContainer {
+    color: #aca8ad;
+    margin: auto auto 0 auto;
+    flex-shrink: 0;
+    background-color: #241b26;
+    text-align: center;
+    font-family: Verdana;
     width: 100%;
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-    background-color: #3f4945;
+
 }
 
 // css for hover over the navi bar
 li a:hover:not(.active) {
-    background-color: #999999;
-    color: white;
+    color: #4CAF50;
+}
+
+main {
+    flex: 1 0 auto;
+    width: 995px;
+    margin: 3% auto 3% auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(drinkBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
 }
 
 ul#nav {
     text-align: center;
     display: block;
     padding: 0px;
+    color: #aca8ad;
+    background-color: #241b26;
 }
 
 #nav li {
@@ -37,48 +66,37 @@ ul#nav {
     color: yellow; // css for changing link color in navigatin bar
 }
 
-#main {
-    width: 100%;
-    text-align: center;
+// #clearfix {
+//     margin-top: 3%;
+// }
+
+
+* {
+    box-sizing: border-box;
+    
 }
 
 
 #descriptionMain {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 25%;
-    border: 3px solid black;
-    padding: 10px 20px;
-    display:inline-block;
-    position: center;
-    min-height: 500px;
-
+    width: 48%;
+    max-width: 700px;
+    margin: 7px;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+    border-top: 10px solid #241b26;
+    float: left;
+    min-height: 400px;
+    max-height: 400px;
+    > p.p {
+        font-size: 20px;
+    }
 }
 
-#InformationMain {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    width: 25%;
-    border: 3px solid black;
-    padding: 10px 20px;
-    display:inline-block;
-    min-height: 500px;
-}
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgray;
-    color: black;
-    text-align: center;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
-
-input[type="submit"] {
-        width: auto;
-        display:block;
-        margin: 0 auto;
-        margin-top: 25px;
-}
-
