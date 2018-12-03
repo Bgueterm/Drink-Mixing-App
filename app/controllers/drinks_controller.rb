@@ -10,14 +10,13 @@ class DrinksController < ApplicationController
 
     def show
         @drink = Drink.find(params[:id])
-        redirect_to drinks_search_results_path
     end
     
     def create
         @drink = Drink.new(drink_params)
 
         if @drink.save
-            redirect_to ('results')
+            render '_success'
         else
             render 'new'
         end
@@ -36,7 +35,6 @@ class DrinksController < ApplicationController
         @drink = Drink.find(params[:id])
         
         if @drink.update(drink_params)
-            redirect_to @drink
         else
             render 'edit'
         end
