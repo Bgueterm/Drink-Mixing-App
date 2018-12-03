@@ -51,6 +51,6 @@ class DrinksController < ApplicationController
     private 
         def drink_params
             params.require(:drink).permit(:name, :alcoholPerVolume, :flavor, 
-            :description, :search, liquor_ids: [], mixer_ids: [])
+            :description, liquor_ids: [], mixer_ids: [])
         end
 end

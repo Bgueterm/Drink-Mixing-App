@@ -4,13 +4,13 @@
 </section>
 
 <section class="liquors">
-  Liquor: <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name do |b| -%>
+  Liquor: <%= f.collection_check_boxes :liquor_ids, Liquor.all, :id, :name do |b| -%>
     <%= b.check_box(class: "checkbox-new") + b.label(class: "checkbox-label-new") { b.text } %>
   <% end %>   
 </section>
 
 <section class="mixers">
-  Mixer: <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name do |b| -%>
+  Mixer: <%= f.collection_check_boxes :mixer_ids, Mixer.all, :id, :name do |b| -%>
     <%= b.check_box(class: "checkbox-new") + b.label(class: "checkbox-label-new") { b.text } %>
   <% end %>
 </section>
