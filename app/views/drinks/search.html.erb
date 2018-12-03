@@ -3,16 +3,18 @@
         <%= render 'search_forms' %>
         <div class="results">
             <div class="results_region">
-                    <H2>RESULTS</H2>
+                <H2>RESULTS</H2>
             </div>
             <div class="drinks_returned">
                 <% @drinks.each do |drink| %>
                     <section class="drink_result">
-                        <section class="drinkname"><%= drink.name %> || <%= drink.flavor %></section>
-                        <section class="drinkdescription"><%= drink.description %></section>
+                        <section class="drinkname"><%= drink.name %></section>
+                        <div class="information_region">
+                            <section class="drinkapv"><strong>APV: </strong><%= drink.alcoholPerVolume %>%</section>
+                            <section class="drinkflavor"><strong>Flavor: </strong><%= drink.flavor %></section>
+                            <strong class="directions">Directions:</strong><section class="drinkdescription"><%= drink.description %></section>
+                        </div>
                     </section>
-                    <br>
-                    <br>
                 <% end %>
             </div>
         </div>

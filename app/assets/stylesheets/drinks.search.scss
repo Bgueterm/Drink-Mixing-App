@@ -142,34 +142,53 @@
     width: 100%;
     height: auto;
     border-top: 10px solid #241b26;
-    padding-bottom: 20px;
     background-color: #fcfcfc;
-    > div.results_region {
-        h2 {
-            padding-top: 15px;
-        }
-        
-        width: 100%;
-        height: 55px;
-    }
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: left;
     
-    > div.drinks_returned {
-        > section.drink_result {
-            padding-top: 5px;
-            width: 100%;
-            height: 50px;
+    .results_region {
+        text-align: center;
+        
+    }
+    .drinkname {
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .image{
+        content:url(drinkall.jpeg);
+        float: right;
+    }
+    .information_region{
+        .drinkapv {
+            text-align: left;
+            border-left: 2px solid #241b26;
+            padding-left: 6px;
+        }
+        .drinkflavor {
+            text-align: left;
             padding-bottom: 10px;
-            >section.drinkdescription {
-                width: 50%;
-                margin-left: 20px;
-                margin-right: 20px;
-                position: relative;
-                top: 90%;
-                left: 22.5%;
-                transform: translateY(-50%); 
-            }
+            border-left: 2px solid #241b26;
+            padding-left: 6px;
+        }    
+        .directions {
+            border-left: 2px solid #241b26;
+            padding-left: 6px;
+        }
+        .drinkdescription {
+            border-left: 2px solid #241b26;
+            padding-left: 6px;
         }
     }
+
+    .drink_result {
+        height: auto;
+        padding-bottom: 20px;
+
+    }
+    padding-bottom: 20px;
 }
 
 
