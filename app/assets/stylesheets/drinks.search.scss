@@ -63,55 +63,54 @@
 
 }
 
-input[type=checkbox] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+.checkbox-label {
+    display:block;
+	width:100%;
+	border: 2px solid #ccc;
+	background: #f8f8f8;
+	border-radius: 2px;
+	text-align: center;
+	padding: 10px 3rem;
+	font-size: 1.2rem;
+	// box-shadow:0 0 5px 5px rgba(0,0,0,0.2);
+	margin: 5px;
+}
+.checkbox-label:hover {
+    background:#ccc;
+}
+.checkbox-search {
+    position:absolute;
+	right:10px;
+	top:15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+.checkbox-search:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
 }
 
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+/* WebKit gets its native focus styles.
+ */
+@media (-webkit-min-device-pixel-ratio:0) {
+  .checkbox-search:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
 }
-/* On mouse-over, add a grey background color */
-input:hover ~ .checkmark {
+
+.checkbox-search:active + label {
     background-color: #ccc;
 }
-
-/* When the checkbox is checked, add a blue background */
-input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+.checkbox-search:checked + label{
+    background-position: 0 0;
+    background: #4CAF50;
+    color: white;
+    -webkit-transition: color .25s, background .25s;
+    transition: color .25s, background .25s;
 }
 
 .box2 {
@@ -144,34 +143,44 @@ input:checked ~ .checkmark:after {
         float: left;
         font-family: Verdana;
         font-size: 25px;
-        section.liquor_name label {
-            border: 2px solid #ccc;
-            color: black;
-            width: 130px;
-            margin: 1px;
-            height: 25px;
-            padding: 2px;
-            background-color: #f8f8f8;
-            border-radius: 1px;
-            display: inline-block;
-            text-align: left;
-            font-size: 16px;
+        
+        section.liquor_name, section.mixer_name {
+            overflow:hidden;
+        	position:relative;
+        	max-width:300px;
+        	margin:auto;
+        	padding:10px;
+        	background:#f9f9f9;
         }
+        
+        // section.liquor_name label {
+        //     border: 2px solid #ccc;
+        //     color: black;
+        //     width: 130px;
+        //     margin: 1px;
+        //     height: 25px;
+        //     padding: 2px;
+        //     background-color: #f8f8f8;
+        //     border-radius: 1px;
+        //     display: inline-block;
+        //     text-align: left;
+        //     font-size: 16px;
+        // }
 
-        section.mixer_name label {
-            border: 2px solid #ccc;
-            color: black;
-            width: 150px;
-            margin: 1px;
-            height: 26px;
-            padding: 2px;
-            top: 1px;
-            background-color: #f8f8f8;
-            border-radius: 1px;
-            display: inline-block;
-            text-align: left;
-            font-size: 16px;
-        }
+        // section.mixer_name label {
+        //     border: 2px solid #ccc;
+        //     color: black;
+        //     width: 150px;
+        //     margin: 1px;
+        //     height: 26px;
+        //     padding: 2px;
+        //     top: 1px;
+        //     background-color: #f8f8f8;
+        //     border-radius: 1px;
+        //     display: inline-block;
+        //     text-align: left;
+        //     font-size: 16px;
+        // }
 
         > section.drink_flavor {
             select {

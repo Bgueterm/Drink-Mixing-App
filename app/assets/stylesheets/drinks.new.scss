@@ -2,8 +2,54 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.checkbox-label-new {
+	width:100%;
+	border: 2px solid #ccc;
+	background: #f8f8f8;
+	border-radius: 2px;
+	text-align: center;
+	padding: 2px;
+	// box-shadow:0 0 5px 5px rgba(0,0,0,0.2);
+	margin: 5px;
+}
+.checkbox-label-new:hover {
+    background:#ccc;
+}
+.checkbox-new {
+    position:absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+.checkbox-new:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+}
+
+/* WebKit gets its native focus styles.
+ */
+@media (-webkit-min-device-pixel-ratio:0) {
+  .checkbox-new:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}
+
+.checkbox-new:active + label {
+    background-color: #ccc;
+}
+.checkbox-new:checked + label{
+    background-position: 0 0;
+    background: #4CAF50;
+    color: white;
+    -webkit-transition: color .25s, background .25s; /* Safari */
+    transition: color .25s, background .25s;
+}
+
 .new_box {
-        padding-top: 40px;
+    padding-top: 40px;
     border-top: 10px solid #241b26;
     padding-bottom: 20px;
     background-color: #fcfcfc;

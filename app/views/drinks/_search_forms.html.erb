@@ -9,8 +9,8 @@
   <div class="box3">
     <%= label_tag "liquorName", "Liquor" %><br>
     <section class="liquor_name">
-      <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name do |b| %>
-        <%= b.label { b.check_box + b.text } %><br>
+      <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name, boolean_style: :inline do |b| %>
+        <%= b.check_box(class: "checkbox-search") + b.label(class: "checkbox-label") { b.text } %>
       <% end %>
     </section>
     <br>
@@ -18,8 +18,8 @@
   <div class="box3">
     <%= label_tag "mixerName", "Mixer" %><br>
     <section class="mixer_name">
-    <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name do |b| %>
-      <%= b.label { b.check_box + b.text } %><br>
+    <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name, boolean_style: :inline do |b| %>
+      <%= b.check_box(class: "checkbox-search") + b.label(class: "checkbox-label") { b.text } %>
     <% end %>
     </section>
     <br>
