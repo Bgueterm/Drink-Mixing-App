@@ -1,12 +1,6 @@
 class DrinksController < ApplicationController
     
     def index
-        @drinks = Drink.all
-        if params[:id]
-            @drinks = Drink.results(params[:results]).order("created_at DESC")
-        else
-            @drinks = Drink.all.order('created_at DESC')
-        end
     end
     
     def new

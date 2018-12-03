@@ -10,9 +10,17 @@ class Drink < ApplicationRecord
     validates :name, presence: true, length: { minimum: 3 }
     validates :alcoholPerVolume, presence: true, numericality: { greater_than_or_equal_to: 0.00, less_than_or_equal_to: 100.00}
     
-    # def to_s
-    #     "Name:#{self.name} :#{self.liquor.name} :#{self.mixer.name}"
-    # end
+    def liquor_names
+        DrinkLiquor.where(drink_id: self.id).collect {
+            |dl| Liquor.find(dl.liquor_id).name
+        }
+    end
+    
+    def mixer_names
+        DrinkMixer.where(drink_id: self.id).collect { 
+            |dm| Mixer.find(dm.mixer_id).name
+        }
+    end
     
     def self.search(name, liquors, mixers, flavor)
         if name
