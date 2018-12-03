@@ -1,20 +1,22 @@
 <%= form_for @drink do |f| %>
  
-  <% if @drink.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@drink.errors.count, "error") %> prohibited
-        this drink from being saved:
-      </h2>
-      <ul>
-        <% @drink.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+
  
  <div class="new_box">
+    <% if @drink.errors.any? %>
+      <div class="error_explanation">
+        <h2>
+          <%= pluralize(@drink.errors.count, "error") %> prohibited
+          this drink from being saved:
+        </h2>
+        <section class="error_outputs">
+          <% @drink.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </section>
+      </div>
+      <br>
+    <% end %>
   <section class="drink_name">
     Drink Name: <%= f.text_field :name , placeholder: "Name of new drink..." %>
   </section>
@@ -28,9 +30,8 @@
   <section class="descriptionregion">
     <%= f.text_area :description, placeholder: "Description of new drink..." %>
   </section>
- 
-  <p>
-    <%= f.submit %>
-  </p>
  </div>
+   <section>
+    <%= f.submit %>
+  </section>
 <% end %>

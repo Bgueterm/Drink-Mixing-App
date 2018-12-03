@@ -2,12 +2,14 @@
     <head>
         <meta http-equiv="refresh" content="3; URL='<%= new_drink_path %>'" />
     </head>
-    <body style="background:white;">
+    <body>
         <main>
-            <h1>
-                Drink creation successful! Redirecting in three seconds...<br>
-                <%= link_to "(Or click here to redirect manually.)", new_drink_path %>
-            </h1>
+            <section class="success_page">
+                <h1>
+                    Drink creation successful! Redirecting in three seconds...<br>
+                    <%= link_to "click here to redirect manually", new_drink_path %>
+                </h1>
+            </section>
         </main>
     </body>
 </html>
