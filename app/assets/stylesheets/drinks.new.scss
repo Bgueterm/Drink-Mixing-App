@@ -40,7 +40,7 @@
 .checkbox-new:active + label {
     background-color: #ccc;
 }
-.checkbox-new:checked + label{
+.checkbox-new:checked + label {
     background-position: 0 0;
     background: #4CAF50;
     color: white;
@@ -107,14 +107,6 @@
         padding-bottom: 17px;
         text-align: left;
         padding-left: 127px;
-        label {
-            color: black;
-            margin: 1px;
-            height: 26px;
-            top: 1px;
-            text-align: left;
-            font-size: 16px;
-        }
     }
 
     textarea {
