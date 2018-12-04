@@ -71,10 +71,10 @@ footer {
 
 .welcome_div:after {
     opacity: 0.80;
-    filter: blur(1px);
-    border-radius: 15px;
+    filter: drop-shadow(0 0 0.75rem black);
+    border-radius: 8px;
     background: #fcfcfc;
-    width: 715px;
+    width: 826px;
     height: 200px;
     z-index: -1;
     content: "";
@@ -84,16 +84,22 @@ footer {
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-
-input[type =button], input[type=submit] {
+ 
+input[type =button], input[type =submit] {
     background-color: #4CAF50;
     border: none;
     color: white;
     padding: 16px 20px;
     width: 100%;
+    font-family: Verdana;
+    font-size: 1.2em;
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 3%;
+}
+
+.welcome_button {
+    padding-left: 5px;
+    width: 50%;
 }
 
 .button_to {

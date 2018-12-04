@@ -70,10 +70,11 @@
 	background: #f8f8f8;
 	border-radius: 2px;
 	text-align: center;
-	padding: 10px 3rem;
-	font-size: 1.2rem;
+	padding: 10px 2rem;
+	margin-bottom:5px;
+	font-size: 1.1rem;
 	// box-shadow:0 0 5px 5px rgba(0,0,0,0.2);
-	margin: 5px;
+
 }
 .checkbox-label:hover {
     background:#ccc;
@@ -114,6 +115,8 @@
 }
 
 .box2 {
+     opacity: 0.98;
+    filter: drop-shadow(0 0 0.75rem black);
     border-top: 10px solid #241b26;
     padding-top: 40px;
     background-color: #fcfcfc;
@@ -124,8 +127,9 @@
     font-family: Verdana;
     > section.drink_name {
         input[type = text] {
-            width: 80%;
-            padding: 12px 12px;
+            width: 86%;
+            font-size: 1.1em;
+            padding: 17px 20px;
             border: 2px solid #ccc;
             background-color: #f8f8f8;
         }
@@ -138,19 +142,22 @@
     >.box3 {
         width: 33.333333%;
         margin: 0px;
-        padding: 20px;
+        padding: 10px;
         position: static;
         float: left;
         font-family: Verdana;
-        font-size: 25px;
-        
+        font-size: 20px;
         section.liquor_name, section.mixer_name {
+            
             overflow:hidden;
         	position:relative;
-        	max-width:300px;
+        	max-width:200px;
         	margin:auto;
-        	padding:10px;
+        	padding:5px;
         	background:#f9f9f9;
+        	section.mixer_name {
+        	    margin-left: 5px;
+        	}
         }
         
         // section.liquor_name label {
@@ -183,11 +190,13 @@
         // }
 
         > section.drink_flavor {
+            margin-left: 5px;
             select {
+                margin-top: 6px;
                 border: 2px solid #ccc;
                 background-color: #f8f8f8;
                 color: black;
-                padding: 3px 25px 3px 25px;
+                padding: 11px 50px 11px 50px;
                 width: auto;
                 cursor: pointer;
                 margin-bottom: 10px;
@@ -197,27 +206,35 @@
     }
 }
 
+.padding {
+    padding: 20px;
+}
+
 * {
     box-sizing: border-box;
 }
 
 .results {
+    opacity: 0.98;
+    filter: drop-shadow(0 0 0.75rem black);
     width: 100%;
     height: auto;
     border-top: 10px solid #241b26;
     background-color: #fcfcfc;
-    padding-left: 150px;
-    padding-right: 150px;
-    text-align: left;
+    padding-left: 80px;
+    padding-right: 160px;
+    
     
     .results_region {
+        padding-top: 5px;
         text-align: center;
+        padding-left: 70px;
         
     }
     .drinkname {
-        padding-top: 20px;
+        padding-top: 12px;
         font-weight: bold;
-        font-size: 1.1em;
+        font-size: 1.2em;
         text-align: center;
     }
     .image{
@@ -235,11 +252,24 @@
     }
 
     .drink_result {
+        display:block;
+	    width:110%;
+	    border: 2px solid #ccc;
+	    background: #f8f8f8;
+	    border-radius: 2px;
+	    text-align: center;
+	    padding: 1px 1rem;
+	    margin-bottom:8px;
+	    font-size: 1.2rem;
+	    // box-shadow:0 0 5px 5px rgba(0,0,0,0.2);
         height: auto;
         padding-bottom: 20px;
 
     }
-    padding-bottom: 20px;
+    .drink_result:hover {
+        background:#ccc;
+    }
+    padding-bottom: 40px;
 }
 
 

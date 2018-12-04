@@ -7,7 +7,7 @@
   <br>
   
   <div class="box3">
-    <%= label_tag "liquorName", "Liquor" %><br>
+    <strong><%= label_tag "liquorName", "Liquor" %><br></strong>
     <section class="liquor_name">
       <%= collection_check_boxes :liquor, :Liquor_ids, Liquor.all, :id, :name, boolean_style: :inline do |b| %>
         <%= b.check_box(class: "checkbox-search") + b.label(class: "checkbox-label") { b.text } %>
@@ -16,7 +16,7 @@
     <br>
   </div>
   <div class="box3">
-    <%= label_tag "mixerName", "Mixer" %><br>
+    <strong><%= label_tag "mixerName", "Mixer" %><br></strong>
     <section class="mixer_name">
     <%= collection_check_boxes :mixer, :Mixer_ids, Mixer.all, :id, :name, boolean_style: :inline do |b| %>
       <%= b.check_box(class: "checkbox-search") + b.label(class: "checkbox-label") { b.text } %>
@@ -26,14 +26,15 @@
   </div>
   <div class="box3">
     <section class="drink_flavor">
-      <%= label_tag "drinkFlavor", "Flavor" %><br>
+      <strong><%= label_tag "drinkFlavor", "Flavor" %><br></strong>
       <%= select_tag :flavor, options_for_select(Drink.flavors), include_blank: true %>
     </section>
   </div>
+  <div class="Submit">
+    <%= submit_tag "Search", class: "btn btn-default" %> 
+  </div>
 </div>
 
-<div class="Submit">
-  <%= submit_tag "Search", class: "btn btn-default" %> 
-</div>
+<div class="padding"></div>
 
 <% end %>

@@ -1,16 +1,19 @@
 
 <section class="flavors">
-   Flavor: <%= f.select :flavor, Drink.flavors.keys, include_blank: true %> 
+   <div class="new_text">Flavor:</div>
+   <%= f.select :flavor, Drink.flavors.keys, include_blank: true %> 
 </section>
 
 <section class="liquors">
-  Liquor: <%= f.collection_check_boxes :liquor_ids, Liquor.all, :id, :name do |b| -%>
+  <div class="new_text">Liquor:</div> 
+  <%= f.collection_check_boxes :liquor_ids, Liquor.all, :id, :name do |b| -%>
     <%= b.check_box(class: "checkbox-new") + b.label(class: "checkbox-label-new") { b.text } %>
   <% end %>   
 </section>
 
 <section class="mixers">
-  Mixer: <%= f.collection_check_boxes :mixer_ids, Mixer.all, :id, :name do |b| -%>
+  <div class="new_text">Mixer:</div>
+  <%= f.collection_check_boxes :mixer_ids, Mixer.all, :id, :name do |b| -%>
     <%= b.check_box(class: "checkbox-new") + b.label(class: "checkbox-label-new") { b.text } %>
   <% end %>
 </section>
