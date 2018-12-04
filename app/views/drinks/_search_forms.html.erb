@@ -1,6 +1,7 @@
 <%= form_tag(search_path.split('?').first, method: :get) do %>
 
 <div class="box2">
+  <section class="image2"></section>
   <section class="drink_name">
     <%= text_field_tag :name, params[:name], placeholder: "Search by drink name..." %>    
   </section>

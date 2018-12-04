@@ -72,8 +72,13 @@ ul#nav {
 
 
 .box {
-     opacity: 0.98;
+    opacity: 0.98;
     filter: drop-shadow(0 0 0.75rem black);
+    > h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2.2em;
+    }
     section.image {
         padding: 20px 0px 0px 0px;
         content:url(home-hero.jpg);
@@ -83,27 +88,24 @@ ul#nav {
     background-color: #fcfcfc;
     width: 100%;
     height: auto;
-    padding-bottom: 40px;
     overflow: auto;
-    padding-left: 70px;
-    padding-right: 80px;
-    color: #241b26;
-    text-align: left;
+
     font-family: Verdana;
-    > p.p {
-        font-size: 20px;
+    .within_home_box{
+        padding-left: 70px;
+        padding-right: 80px;
+        color: #241b26;
+        text-align: left;
+        > p.p {
+            font-size: 20px;
+        }
+        > h2 {
+            padding-top: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
     }
-    > h1 {
-        padding-top: 20px;
-        text-align: center;
-        font-size: 2.2em;
-    }
-    > h2 {
-        padding-top: 20px;
-        text-align: center;
-        padding-bottom: 20px;
-        
-    }
+    padding-bottom: 40px;
 }
 
 
