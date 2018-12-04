@@ -115,7 +115,7 @@
 }
 
 .box2 {
-    opacity: 0.98;
+    opacity: 0.97;
     filter: drop-shadow(0 0 0.75rem black);
     border-top: 10px solid #241b26;
     padding-top: 0px;
@@ -126,7 +126,7 @@
     color: #241b26;
     font-family: Verdana;
     section.image2 {
-        padding-bottom: 30px;
+        padding-bottom: 40px;
         content:url(search_page_image.jpg);
         width: 100%;
     }
@@ -159,7 +159,7 @@
         	max-width:200px;
         	margin:auto;
         	padding:5px;
-        	background:#f9f9f9;
+
         	section.mixer_name {
         	    margin-left: 5px;
         	}
@@ -259,6 +259,7 @@
     .drink_result {
         display:block;
 	    width:110%;
+
 	    border: 2px solid #ccc;
 	    background: #f8f8f8;
 	    border-radius: 2px;
@@ -274,7 +275,7 @@
     .drink_result:hover {
         background:#ccc;
     }
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 

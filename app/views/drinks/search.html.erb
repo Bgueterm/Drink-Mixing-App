@@ -1,7 +1,9 @@
-<body class="search_body">
-    <main>
+<body class="search_body", style="z-index: 2">
+    <main >
         <%= render 'search_forms' %>
+        <section class="box2_transparency", style="z-index: 1"></section>
         <div class="results">
+            <div class="results_border"></div>
             <div class="results_region">
                 <H2>RESULTS</H2>
             </div>
@@ -27,5 +29,6 @@
                 <% end %>
             </div>
         </div>
+        <div class="results_transparency"></div>
     </main>
 </body>
