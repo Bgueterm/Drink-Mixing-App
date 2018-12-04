@@ -137,7 +137,9 @@
     }
 }
 
-.success_page {
+.success_page {    
+    opacity: 0.98;
+    filter: drop-shadow(0 0 0.75rem black);
     padding-top: 40px;
     padding-bottom: 40px;
     border-top: 10px solid #241b26;
