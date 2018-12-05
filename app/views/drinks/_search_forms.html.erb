@@ -1,7 +1,7 @@
 <%= form_tag(search_path.split('?').first, method: :get) do %>
-
-<div class="box2">
   <section class="image2"></section>
+<div class="box2">
+
   <section class="drink_name">
     <%= text_field_tag :name, params[:name], placeholder: "Search by drink name..." %>    
   </section>
@@ -31,11 +31,11 @@
       <%= select_tag :flavor, options_for_select(Drink.flavors), include_blank: true %>
     </section>
   </div>
-  <div class="Submit">
+
+</div>
+  <div class="search_submit">
     <%= submit_tag "Search", class: "btn btn-default" %> 
   </div>
-</div>
-
 <div class="box2_transparent"></div>
 
 <div class="padding"></div>

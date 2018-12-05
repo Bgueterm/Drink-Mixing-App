@@ -25,6 +25,9 @@ footer {
     font-family: Verdana;
     width: 100%;
     padding: 20px;
+    bottom: 0;
+    z-index: 3;
+    margin-top: 1125px;
 }
 .intro {
     font-family: Verdana;
@@ -83,7 +86,10 @@ footer {
     transform: translate(-50%, -50%);
 }
  
-input[type =button], input[type =submit] {
+
+
+.welcome_button {
+    > input[type =button], input[type =submit] {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -93,9 +99,7 @@ input[type =button], input[type =submit] {
     font-size: 1.2em;
     text-decoration: none;
     cursor: pointer;
-}
-
-.welcome_button {
+    }
     padding-left: 5px;
     width: 50%;
 }

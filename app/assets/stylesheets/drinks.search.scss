@@ -113,23 +113,29 @@
     -webkit-transition: color .25s, background .25s;
     transition: color .25s, background .25s;
 }
+    section.image2 {
+        top: 11px;
+        content:url(search_page_image.jpg);
+        width: 995px;
+        position: relative;
+        z-index:2;
+    }
 
 .box2 {
+    position: relative;
     opacity: 0.97;
     filter: drop-shadow(0 0 0.75rem black);
     border-top: 10px solid #241b26;
-    padding-top: 0px;
+    padding-top: 320px;
+    padding-bottom: 80px;
+    top: -275px;
     background-color: #fcfcfc;
     width: 100%;
     height: auto;
     overflow: auto;
     color: #241b26;
     font-family: Verdana;
-    section.image2 {
-        padding-bottom: 40px;
-        content:url(search_page_image.jpg);
-        width: 100%;
-    }
+
     > section.drink_name {
         input[type = text] {
             width: 86%;
@@ -210,6 +216,22 @@
         }
     }
 }
+.search_submit {
+    > input[type =button], input[type =submit] {
+        z-index: 2;   
+        position: relative;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 20px;
+        width: 995px;
+        top:-330px;
+        font-family: Verdana;
+        font-size: 1.2em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
 
 .padding {
     padding: 20px;
@@ -228,8 +250,8 @@
     background-color: #fcfcfc;
     padding-left: 80px;
     padding-right: 160px;
-    
-    
+    top: -300px;
+    position: relative;
     .results_region {
         padding-top: 5px;
         text-align: center;
@@ -259,7 +281,6 @@
     .drink_result {
         display:block;
 	    width:110%;
-
 	    border: 2px solid #ccc;
 	    background: #f8f8f8;
 	    border-radius: 2px;
@@ -269,13 +290,15 @@
 	    font-size: 1.2rem;
 	    // box-shadow:0 0 5px 5px rgba(0,0,0,0.2);
         height: auto;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
 
     }
     .drink_result:hover {
         background:#ccc;
     }
-    padding-bottom: 70px;
+    padding-bottom: 40px;
+    margin-bottom: -1180px;
 }
 
 

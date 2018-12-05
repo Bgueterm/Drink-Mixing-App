@@ -50,8 +50,19 @@
     transition: color .25s, background .25s;
 }
 
+    section.image3 {
+        top: 11px;
+        content:url(Signature_Beverage.jpg);
+        width: 995px;
+        position: relative;
+        z-index:2;
+    }
+
+
 .new_box {
-    opacity: 0.98;
+    opacity: 0.97;
+    position: relative;
+    top: -275px;
     filter: drop-shadow(0 0 0.75rem black);
     .error_explanation {
         margin-top: -25px;
@@ -60,7 +71,7 @@
         color: red;
         padding-bottom: 10px;
     }
-    padding-top: 40px;
+    padding-top: 300px;
     border-top: 10px solid #241b26;
     background-color: #fcfcfc;
     width: 100%;
@@ -69,6 +80,7 @@
     font-family: Verdana;
     font-size: 1.1em;
     font-weight: bold;
+    padding-bottom: 80px;
     
     > section.drink_name {
         text-align: left;
@@ -135,7 +147,26 @@
     .Button {
         padding-top: 40px;
     }
+ margin-bottom: -1450px;
+
 }
+
+    .new_submit {
+        > input[type =button], input[type =submit] {
+            z-index: 2;   
+            position: relative;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 20px;
+            width: 995px;
+            top: 1120px;
+            font-family: Verdana;
+            font-size: 1.2em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
 
 .success_page {    
     opacity: 0.98;

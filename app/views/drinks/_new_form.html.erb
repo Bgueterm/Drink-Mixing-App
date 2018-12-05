@@ -1,7 +1,7 @@
 <%= form_for @drink do |f| %>
  
 
- 
+   <section class="image3"></section>
  <div class="new_box">
     <% if @drink.errors.any? %>
       <div class="error_explanation">
@@ -32,9 +32,9 @@
   <section class="descriptionregion">
     <%= f.text_area :description, placeholder: "Description of new drink..." %>
   </section>
-  <section class="Button">
+ </div>
+   <section class="new_submit">
     <%= f.submit %>
   </section>
- </div>
 
 <% end %>
