@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html {
     height: 100%;
+    
 }
 body {
     margin: 0;
@@ -10,10 +11,12 @@ body {
     flex-direction: column;
     height: 100%; /* Avoid the IE 10-11 `min-height` bug. */
     position: relative;
+    
 }
 
 main {
     flex: 1 0 auto;
+    
 }
 
 footer {
@@ -25,16 +28,17 @@ footer {
     font-family: Verdana;
     width: 100%;
     padding: 20px;
-    bottom: 0;
     z-index: 3;
     margin-top: 1125px;
 }
+
 .intro {
     font-family: Verdana;
 }
 
 .age_check {
     font-family: Verdana;
+    
 }
 
 .welcome_body{
@@ -43,6 +47,7 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    
 }
 
 .welcome_div {
@@ -50,17 +55,22 @@ footer {
     color: #241b26;
     left: 0;
     top: 34%;
-    position: fixed;
+    position: relative;
     width: 100%;
     font-size: 20px;
     text-align: center;
     line-height: 2px;
-    
     position: fixed;
     top: 45%;
     left: 50%;
+    
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+    
+}
+
+.padding2 {
+    padding-bottom: 100px;
 }
 
 .welcome_table {
@@ -68,6 +78,7 @@ footer {
     margin: 0px auto;
     font-family: Verdana;
     font-size: 18px;
+    
 }
 
 .welcome_div:after {
@@ -84,6 +95,7 @@ footer {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+   
 }
  
 
