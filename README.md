@@ -1,24 +1,17 @@
-# README
+How to get running:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Clone repository to ide such as cloud9
 
-Things you may want to cover:
+If necessary, execute: bundle install
 
-* Ruby version
+Initialize the database by running:
+    rails db:reset
+    rails db:migrate
+    rails db:seed
+    
+Next, start the server by executing: rails s
 
-* System dependencies
+In cloud9, go to preview < running application, then in the new window that pops up,
+click the button to open in new tab.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The website should now be running.
